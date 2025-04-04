@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/PersonalWebsite/static/css/main.7211948f.css",
+    "main.js": "/PersonalWebsite/static/js/main.9ad8f1e6.js",
+    "static/js/453.195b869a.chunk.js": "/PersonalWebsite/static/js/453.195b869a.chunk.js",
+    "static/media/2023SummerFull.png": "/PersonalWebsite/static/media/2023SummerFull.e3e1166bf492af6f571e.png",
+    "static/media/2021Fall2022Winter.jpg": "/PersonalWebsite/static/media/2021Fall2022Winter.82805d7304dec577c4d3.jpg",
+    "static/media/fd.png": "/PersonalWebsite/static/media/fd.8bff60069496e387b78f.png",
+    "static/media/2023Winter.jpg": "/PersonalWebsite/static/media/2023Winter.8ac64d27635745fd6efe.jpg",
+    "static/media/2019winter.jpg": "/PersonalWebsite/static/media/2019winter.cbd1801e7557e986d4b6.jpg",
+    "static/media/DL.png": "/PersonalWebsite/static/media/DL.f24f0a879e08bd9093ab.png",
+    "static/media/wallpaper.jpg": "/PersonalWebsite/static/media/wallpaper.12ab45d0a6c78e381d8a.jpg",
+    "static/media/bwIMG_1708.jpeg": "/PersonalWebsite/static/media/bwIMG_1708.d9bf62616a632361717d.jpeg",
+    "static/media/2018summer.jpg": "/PersonalWebsite/static/media/2018summer.5055453f134ab497a712.jpg",
+    "static/media/gamertag.png": "/PersonalWebsite/static/media/gamertag.c4e9ead03d22494c2766.png",
+    "static/media/2018Spring.jpg": "/PersonalWebsite/static/media/2018Spring.ace4d4fddb16e00d9783.jpg",
+    "static/media/2018fall.jpg": "/PersonalWebsite/static/media/2018fall.337e63bc6c7b67df229d.jpg",
+    "static/media/2019summerfall.jpg": "/PersonalWebsite/static/media/2019summerfall.ad40cae397d39b205e3e.jpg",
+    "static/media/FD.png": "/PersonalWebsite/static/media/FD.33fca48e3f11a9bedcd7.png",
+    "static/media/2020-Winter.jpg": "/PersonalWebsite/static/media/2020-Winter.892ba1a31ec9c637a3a9.jpg",
+    "static/media/M.png": "/PersonalWebsite/static/media/M.a22e7e3e79e7499d8fe4.png",
+    "index.html": "/PersonalWebsite/index.html",
+    "main.7211948f.css.map": "/PersonalWebsite/static/css/main.7211948f.css.map",
+    "main.9ad8f1e6.js.map": "/PersonalWebsite/static/js/main.9ad8f1e6.js.map",
+    "453.195b869a.chunk.js.map": "/PersonalWebsite/static/js/453.195b869a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7211948f.css",
+    "static/js/main.9ad8f1e6.js"
+  ]
+}
