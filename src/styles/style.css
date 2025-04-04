@@ -1,0 +1,475 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "FreePixel";
+    src: url("https://sadhost.neocities.org/fonts/FreePixel.ttf") format("truetype");
+}
+body {
+font-family: "FreePixel";
+  font-size: 14px;
+  font-smooth: none;
+   color: var(--text-color);
+}
+strong {
+  font-weight: bold;
+}
+a{
+  color: white;
+  font-weight: bold;
+}
+a.link{
+  color: blue;
+}
+h1{
+  color: white;
+  font-size: 38pt;
+  font-weight: bold;
+}
+h2{
+  color: white;
+  font-weight: bold;
+  text-shadow: 4px 4px 4px #000000;
+}
+.b{
+  font-weight: bold;
+    color: white;
+    display: inline;
+}
+
+
+
+#desktop {
+  background: teal;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(../images/backgrounds/wallpaper.jpg);
+  background-size: cover;
+  overflow: auto;
+  padding-bottom: 0%;
+  display: flex;
+}
+
+
+
+/*----------TOOLBAR---------------*/
+#toolbar {
+  background: #c0c0c0;
+  height: 35px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-top: 2px solid #fff;
+}
+#toolbar .toolbar-start-menu {
+  float: left;
+}
+#toolbar .toolbar-start-menu .start-button {
+  background: url(https://win98icons.alexmeub.com/icons/png/windows-0.png) no-repeat 2px center/24px;
+  padding-left: 28px;
+  padding-right: 5px;
+  height: 29px;
+  margin: 2px 3px;
+  font-weight: bold;
+  border: 2px solid #7c7c7c;
+  border-top-color: #fff;
+  border-left-color: #fff;
+}
+#toolbar .toolbar-start-menu .start-button:hover {
+  background-color: #a7a7a7;
+}
+#toolbar .toolbar-start-menu .start-menu-wrapper {
+  border: 2px solid #7c7c7c;
+  border-top-color: #fff;
+  border-left-color: #fff;
+  background: #c0c0c0;
+  position: fixed;
+  left: 2px;
+  bottom: 33px;
+  width: 190px;
+  min-height: 200px;
+}
+#toolbar .toolbar-start-menu .start-menu-wrapper .start-menu-title {
+  height: 100%;
+  padding: 5px 5px;
+  background: linear-gradient(90deg, #00007b 0%, #0000ff 5%, #00007b 100%);
+  color: #fff;
+  width: 40px;
+  float: left;
+  text-transform: uppercase;
+  font-size: 20px;
+  position: absolute;
+}
+#toolbar .toolbar-start-menu .start-menu-wrapper .start-menu-title span {
+  transform: rotate(-90deg);
+  transform-origin: left 0;
+  position: absolute;
+  left: 10px;
+  bottom: -10px;
+}
+#toolbar .toolbar-start-menu .start-menu-wrapper .start-menu {
+  margin-left: 40px;
+}
+#toolbar .toolbar-separator {
+  width: 2px;
+  height: 26px;
+  margin-top: 2px;
+  background: #797979;
+  float: left;
+  border-right: 1px solid #fff;
+}
+#toolbar .toolbar-left {
+  float: left;
+  padding: 0 5px;
+}
+
+#toolbar .toolbar-right {
+  float: right;
+  margin: 2px 3px;
+  height: 29px;
+  border: 2px solid #7c7c7c;
+  border-bottom-color: #fff;
+  border-right-color: #fff;
+}
+#toolbar .toolbar-right .time {
+  padding: 6px 10px;
+  color: black;
+}
+
+/*---------------APP-------------------*/
+.container{
+  display: grid;
+  grid-template-areas:
+    'header header header header header'
+    'main right right right right'
+    'main body body body body'
+    'menu body body body body'
+    'menu body body body body'
+    'menu body body body body'
+    'menu body body body body';
+  gap: 2%;
+  background-color: #2196F3;
+  color: rgba(195,195,195,1);
+  background-color: rgba(0,0,0,0.7);
+  font-size: 14pt;
+  height: 85%;
+  width: 70%;
+  margin-left: 5%;
+  margin-top: 2%;
+  box-shadow: 20px 20px 20px black;
+  border: 4px solid #c0c0c0;
+  letter-spacing: 0.01em;
+  overflow: auto;
+}
+.aboutbanner {
+  grid-area: header;
+  text-align: center;
+  background-color: #00274C;
+  background-image: url("../images/M.png");
+  background-repeat: no-repeat;
+  background-size: contain; /* Adjust to fit the React app layout */
+  background-position: center right; /* Ensure proper alignment */
+  border-bottom: 4px solid #c0c0c0;
+}
+.about1, .about4 {
+  width: 100%; /* Ensure both about1 and about4 have the same width */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: flex-start; /* Align content to the top */
+  align-items: center; /* Center content horizontally */
+  border: 4px solid #c0c0c0;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
+.about1 {
+  grid-area: main;
+  height: 100%; /* Maintain aspect ratio */
+  margin-left: 5%;
+  margin-right: 5%;
+  aspect-ratio: 1 / 1; /* Ensure the container maintains the same aspect ratio as the image */
+}
+.about1 img {
+  width: 100%;
+  height: 100%; /* Ensure the image fills the container */
+  object-fit: cover; /* Maintain aspect ratio without stretching */
+}
+.about2{
+  grid-area: right;
+  width: auto;
+  height: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 16px;
+  margin-right: 2%;
+  border: 4px solid #c0c0c0;
+  display: flex; /* Use flexbox to align children */
+  flex-direction: column; /* Stack children vertically */
+}
+.about2 ul {
+  list-style-type: none; /* Remove bullets from the list */
+  padding: 2%; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+.about3, .about4 {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Distribute content to align the bottom */
+  border: 4px solid #c0c0c0;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-sizing: border-box; /* Include padding and border in dimensions */
+}
+.about4 {
+  grid-area: menu;
+  margin-left: 5%; /* Align with about1 */
+}
+ul.about4nav{
+  list-style-type: none;
+  padding-inline-start: 0px;
+  text-align: right;
+  width: 100%;
+  height: auto;
+}
+
+.about4nav li {
+  height: 33.33%;
+}
+
+li.about4navli a {
+  display: block;
+  color: #000;
+  padding: 10% 10%;
+  text-decoration: none;
+  background: rgba(0, 39, 76, 0.5);
+  color: white;
+  box-shadow: 0px 5px 5px white;
+  height: 100%;
+  
+}
+li.about4navli a.active {
+  background: rgba(0, 39, 76, 1);
+  color: white;
+}
+li.about4navli a:hover:not(.active) {
+  color: white;
+  background: rgba(0, 39, 76, 1);
+}
+.about3{
+  grid-area: body;
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 14pt;
+  letter-spacing: 0.01em;
+  overflow: auto;
+  height: 100%; /* Ensure it fills the container height */
+  margin-right: 2%;
+  border: 4px solid #c0c0c0;
+  box-sizing: border-box; /* Include padding and border in dimensions */
+  margin-bottom: 5%;
+}
+/*---------------/INDEX-------------------*/
+.academic{
+  text-align: left;
+  color: rgba(195,195,195,1);
+  background-color: rgba(0,0,0,0.7);
+  font-size: 14pt;
+  display: block;
+  height: 85%;
+  width: 70%;
+  margin-left: 5%;
+  margin-top: 2%;
+  box-shadow: 20px 20px 20px black;
+
+  border: 4px solid #c0c0c0;
+  letter-spacing: 0.01em;
+  overflow: auto;
+}
+
+.content{
+  padding-left: 0%;
+  display: flex; /* Use flexbox to align sidebar and main content */
+  flex-direction: row; /* Align items horizontally */
+  align-items: stretch; /* Ensure children, including .nav3, stretch to fill the height */
+}
+
+.content aside {
+  flex: 0 0 20%; /* Sidebar takes up 20% of the width */
+  max-width: 30% /* Limit the sidebar width */
+}
+
+.content .main-content {
+  flex: 1; /* Main content takes up the remaining space */
+}
+
+.pbanner {
+  background-image: url("../images/fd.png");
+  background-color: #c0c0c0;
+}
+.pbanner h2, .mbanner h2 {
+  margin: 0;
+}
+
+.pbanner, .mbanner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-bottom: 2px solid #c0c0c0;
+  padding: 5%;
+}
+.mbanner {
+  background-image: url("../images/M.png");
+  background-color: #00274C;
+  background-position: right;
+  background-size: 30%;
+  grid-area: header;
+}
+
+.papers {
+  color: white;
+  font-weight: bold;
+  font-size: 16pt;
+}
+img.radius{
+    display: inline-block;
+
+    border: 4px solid #c0c0c0;
+    margin-right: 2%;
+}
+.courses{
+  list-style-type: square;
+  padding-left: 30px;
+}
+
+img.nav{
+  padding-bottom: 5px;
+}
+
+a.nav{
+  color: white;
+  text-decoration: none;
+}
+div.nav{
+  height: 500px;
+  width: 100px;
+  text-align: center;
+  float: left;
+}
+div.nav ul {
+  list-style-type: none; /* Remove bullets from nav list items */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+li.nav {
+  width: 115px;
+  height: 100px;
+  padding-top: 55px;
+  margin: 10px;
+  text-align: center;
+}
+
+.nav img{
+  height: auto;
+  width: auto;
+}
+.nav .navFD{
+  height: 48px;
+  width: 48px;
+}
+
+div.pr{
+  padding-top: 2%;
+  width: 100%;
+}
+
+blockquote {
+  font-style: italic;
+  padding-bottom: 2%;
+}
+#pr {
+  display: block-inline;
+  width: auto;
+  height: 300px;
+  border: 4px solid #c0c0c0;
+}
+.nav3{
+  padding-bottom: 120%; /*Bad ideas*/
+  padding-left: 10%;
+  margin-right: 5%;
+  margin-left: 0%;
+  text-align: left;
+  color: rgba(195,195,195,1);
+  background-color: rgba(0,0,0,0.7);
+  box-shadow: 20px 20px 20px black;
+  height: 100%; /* Ensure it fills the height of its parent container */
+  min-height: 100%; /* Ensure it extends to the full height of .academic2 */
+  border-right: 4px solid #c0c0c0;
+  border-bottom: 4px solid #c0c0c0;
+  list-style-image: url("../images/icons/zone-internet-16x16.png");
+  margin-top: 0; /* Ensure no margin at the top */
+  padding-top: 2%; /* Ensure no padding at the top */
+  width: 100%; /* Ensure it matches the width of .sidebar-title */
+  display: flex; /* Use flexbox for proper alignment */
+  flex-direction: column; /* Stack items vertically */
+}
+.nav3 li{
+  padding-bottom: 5%;
+  text-decoration: none;
+  font-size: 12pt;
+}
+
+.nav3 a{
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.nav3 a:hover{
+  color: magenta;
+}
+
+.sidebar-title{
+  margin-top: 0%;
+  padding-top: 2%;
+  width: 100%;
+  background-color: #c0c0c0;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  text-align: left;
+  color: rgba(195,195,195,1);
+  background-color: rgba(0,0,0,0.9);
+  box-shadow: 20px 20px 20px black;
+  border-top: 4px solid #c0c0c0;
+  border-right: 4px solid #c0c0c0;
+  border-bottom: 4px solid #c0c0c0;
+  margin-bottom: 0; /* Ensure no margin at the bottom */
+  width: 100%; /* Ensure it matches the width of .nav3 */
+  margin-top: 0; /* Ensure no margin above .sidebar-title */
+}
+ul.personal {
+    list-style-type: square;
+    padding-left: 5%;
+}
+
+.nav-container {
+  display: flex; /* Use flexbox to align the two nav containers side by side */
+  flex-direction: row; /* Align items horizontally */
+}
+
+.nav {
+  width: 50%; /* Adjust width as needed */
+  text-align: center;
+}
+
+.nav-secondary {
+  width: 50%; /* Adjust width as needed */
+  text-align: center;
+}
+.nav-secondary img{
+  margin-bottom: 5px;
+}
+.nav-secondary ul {
+  list-style-type: none; /* Remove bullets from the list */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
