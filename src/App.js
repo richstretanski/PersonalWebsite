@@ -79,7 +79,7 @@ const AppContent = () => {
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/PersonalWebsite/">
       <AppContent />
     </Router>
   );
