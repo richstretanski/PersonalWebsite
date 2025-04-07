@@ -3,6 +3,7 @@ import Head from '../../components/Head'; // Import Head
 import Navbar from '../../components/Navbar'; // Import Navbar
 import Footer from '../../components/Footer'; // Import Footer
 import Sidebar from '../../components/Sidebar'; // Import Sidebar
+import Titlebar from '../../components/Titlebar'; // Import Titlebar
 import miprWinter2023 from '../../images/melee/MIPR/2023Winter.jpg'; // Import image
 
 const MIPRWinter2023 = () => {
@@ -11,6 +12,7 @@ const MIPRWinter2023 = () => {
       <Head /> {/* Add Head */}
       <Navbar /> {/* Add Navbar */}
       <div className="academic">
+        <Titlebar title="MIPR Winter 2023" /> {/* Add Titlebar */}
         <div className="pbanner">
           <h2>MIPR Winter 2023</h2>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from '../components/Head'; // Import Head
 import Navbar from '../components/Navbar'; // Import Navbar
+import Titlebar from '../components/Titlebar';
 import Footer from '../components/Footer'; // Import Footer
 import profileImage from '../images/bwIMG_1708.jpeg'; // Import profile image
 import { Link } from 'react-router-dom';
@@ -11,7 +12,9 @@ const About = () => {
     <div id="desktop">
       <Head /> {/* Add Head */}
       <Navbar /> {/* Add Navbar */}
+      
       <div className="container">
+        <Titlebar title="About" /> {/* Move Titlebar inside .container */}
         <div className="mbanner">
           <h2>Rich Stretanski</h2>
         </div>

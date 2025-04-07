@@ -3,6 +3,7 @@ import Head from '../../components/Head'; // Import Head
 import Navbar from '../../components/Navbar'; // Import Navbar
 import Footer from '../../components/Footer'; // Import Footer
 import Sidebar from '../../components/Sidebar'; // Import Sidebar
+import Titlebar from '../../components/Titlebar'; // Import Titlebar
 
 const MeleeTournamentStats = () => {
   return (
@@ -10,6 +11,7 @@ const MeleeTournamentStats = () => {
       <Head /> {/* Add Head */}
       <Navbar /> {/* Add Navbar */}
       <div className="academic">
+        <Titlebar title="Melee Tournament Stats" /> {/* Add Titlebar */}
         <div className="pbanner">
           <h2>Melee Tournament Stats</h2>
         </div>

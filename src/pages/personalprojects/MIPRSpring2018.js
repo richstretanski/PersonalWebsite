@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar'; // Import Navbar
 import Footer from '../../components/Footer'; // Import Footer
 import Sidebar from '../../components/Sidebar'; // Import Sidebar
 import miprSpring2018 from '../../images/melee/MIPR/2018Spring.jpg'; // Import image
+import Titlebar from '../../components/Titlebar'; // Import Titlebar
 
 const MIPRSpring2018 = () => {
   return (
@@ -11,6 +12,7 @@ const MIPRSpring2018 = () => {
       <Head /> {/* Add Head */}
       <Navbar /> {/* Add Navbar */}
       <div className="academic">
+        <Titlebar title="MIPR Spring 2018" /> {/* Add Titlebar */}
         <div className="pbanner">
           <h2>MIPR Spring 2018</h2>
         </div>

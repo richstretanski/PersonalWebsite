@@ -2,6 +2,7 @@ import React from 'react';
 import Head from '../components/Head'; // Import Head
 import Navbar from '../components/Navbar'; // Import Navbar
 import Footer from '../components/Footer';
+import Titlebar from '../components/Titlebar'; // Import Titlebar
 import AcademicSidebar from '../components/AcademicSidebar'; // Ensure AcademicSidebar is imported
 
 const AcademicProjects = () => {
@@ -10,6 +11,7 @@ const AcademicProjects = () => {
       <Head /> {/* Add Head */}
       <Navbar /> {/* Add Navbar */}
       <div className="academic">
+        <Titlebar title="Academic Projects" /> {/* Add Titlebar */}
         <div className="mbanner">
           <h2>About Academic Projects</h2>
         </div>

@@ -3,34 +3,27 @@ import Head from '../../components/Head'; // Import Head
 import Navbar from '../../components/Navbar'; // Import Navbar
 import Footer from '../../components/Footer'; // Import Footer
 import Sidebar from '../../components/Sidebar'; // Import Sidebar
-import miprWinter2019 from '../../images/melee/MIPR/2019winter.jpg'; // Import image
+import miprSummerFall2018 from '../../images/melee/MIPR/2018summerfall.jpg'; // Import image
 import Titlebar from '../../components/Titlebar'; // Import Titlebar
 
-const MIPRWinter2019 = () => {
+const MIPRSummerFall2018 = () => {
   return (
     <div id="desktop">
       <Head /> {/* Add Head */}
       <Navbar /> {/* Add Navbar */}
       <div className="academic">
-        <Titlebar title="MIPR Winter 2019" /> {/* Add Titlebar */}
+        <Titlebar title="MIPR Summer - Fall 2018" /> {/* Add Titlebar */}
         <div className="pbanner">
-          <h2>MIPR Winter 2019</h2>
+          <h2>MIPR Summer/Fall 2018</h2>
         </div>
         <div className="content">
           <Sidebar /> {/* Use Sidebar component */}
           <div className="main-content" style={{ paddingRight: '5%', paddingBottom: '10%' }}>
-            <span id="5" className="papers">MIPR Winter 2019</span>
+            <span id="1" className="papers">MIPR Summer/Fall 2018</span>
             <br />
             <br />
-            <ul className="personal">
-              <li>
-                <a href="https://docs.google.com/spreadsheets/d/1rOKFwvAqvp1tTj8GpoEbSDt75uFJA9ewBIweTE2OSD0/edit?usp=sharing" target="_blank">
-                  Ballot Results
-                </a>
-              </li>
-            </ul>
             <div className="pr">
-              <img id="pr" src={miprWinter2019} alt="MIPR Winter 2019" />
+              <img id="pr" src={miprSummerFall2018} alt="MIPR Summer/Fall 2018" />
             </div>
             <hr />
           </div>
@@ -41,4 +34,4 @@ const MIPRWinter2019 = () => {
   );
 };
 
-export default MIPRWinter2019;
+export default MIPRSummerFall2018;

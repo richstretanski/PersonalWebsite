@@ -3,6 +3,7 @@ import Head from '../../components/Head'; // Import Head
 import Navbar from '../../components/Navbar'; // Import Navbar
 import Footer from '../../components/Footer'; // Import Footer
 import Sidebar from '../../components/Sidebar'; // Import Sidebar
+import Titlebar from '../../components/Titlebar'; // Import Titlebar
 
 const MIPRSummer2022 = () => {
   return (
@@ -10,6 +11,7 @@ const MIPRSummer2022 = () => {
       <Head /> {/* Add Head */}
       <Navbar /> {/* Add Navbar */}
       <div className="academic">
+        <Titlebar title="MIPR Summer 2022" /> {/* Add Titlebar */}
         <div className="pbanner">
           <h2>MIPR Summer 2022</h2>
         </div>

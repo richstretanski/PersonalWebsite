@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Head from './components/Head'; // Import Head
 import Navbar from './components/Navbar'; // Import Navbar
 //pages
@@ -33,20 +33,19 @@ import ItProjects from './pages/academicprojects/ItProjects'; // Import ItProjec
 
 const AppContent = () => {
   const location = useLocation(); // Get the current location
+  const basename = process.env.NODE_ENV === 'production' ? '/PersonalWebsite' : '/';
 
-  // Defensive check for location
-  if (!location) {
-    console.error('Location is null or undefined');
-    return null;
-  }
+  // Adjust the condition to include the basename
+  const isHomePage = location.pathname === '/' || location.pathname === basename;
 
   return (
     <div id="desktop">
       <Head /> {/* Add Head */}
-      {/* Conditionally render Navbar only on the home page */}
-      {location.pathname === '/' && <Navbar />}
+      {/* Render Navbar on the home page */}
+      {isHomePage && <Navbar />}
       <Routes>
-        <Route path="/about" element={<About />} /> {/* Add About route */}
+        
+        <Route path="/about" element={<About />} />
         <Route path="/academic-projects" element={<AcademicProjects />} />
         <Route path="/academicprojects/infosec-projects" element={<InfosecProjects />} /> {/* Ensure InfosecProjects route */}
         <Route path="/academicprojects/digital-marketing-projects" element={<DigitalMarketingProjects />} />
@@ -71,6 +70,8 @@ const AppContent = () => {
         <Route path="/personal-projects/mipr-spring-2018" element={<MIPRSpring2018 />} />
         <Route path="/tourneystats" element={<TourneyStats />} /> {/* Add TourneyStats route */}
         <Route path="/miprdle" element={<MIPRDLE />} />
+        {/* Redirect /PersonalWebsite to / */}
+        <Route path="/PersonalWebsite" element={<Navigate to="/" replace />} />
       </Routes>
       <Footer />
     </div>
@@ -78,8 +79,10 @@ const AppContent = () => {
 };
 
 const App = () => {
+  const basename = process.env.NODE_ENV === 'production' ? '/PersonalWebsite' : '/';
+
   return (
-    <Router basename="/PersonalWebsite/">
+    <Router basename={basename}>
       <AppContent />
     </Router>
   );

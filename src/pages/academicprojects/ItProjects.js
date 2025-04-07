@@ -2,6 +2,7 @@ import React from 'react';
 import Head from '../../components/Head'; // Import Head
 import Navbar from '../../components/Navbar'; // Import Navbar
 import Footer from '../../components/Footer'; // Import Footer
+import Titlebar from '../../components/Titlebar'; // Import Titlebar
 
 const ItProjects = () => {
   return (
@@ -9,6 +10,7 @@ const ItProjects = () => {
       <Head /> {/* Add Head */}
       <Navbar /> {/* Add Navbar */}
       <div className="academic">
+        <Titlebar title="Information Technology Projects" /> {/* Add Titlebar */}
         <div className="mbanner">
           <h2>Information Technology Projects</h2>
         </div>

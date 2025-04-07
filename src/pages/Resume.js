@@ -1,7 +1,8 @@
 import React from 'react';
 import Head from '../components/Head'; // Import Head
 import Navbar from '../components/Navbar'; // Import Navbar
-import Footer from '../components/Footer';
+import Footer from '../components/Footer'; // Import Footer
+import Titlebar from '../components/Titlebar'; // Import Titlebar
 
 const Resume = () => {
   return (
@@ -9,6 +10,7 @@ const Resume = () => {
       <Head /> {/* Add Head */}
       <Navbar /> {/* Add Navbar */}
       <div className="academic">
+        <Titlebar title="Resume" /> {/* Add Titlebar */}
         <div className="mbanner">
           <h2>Resume Request Form</h2>
         </div>
