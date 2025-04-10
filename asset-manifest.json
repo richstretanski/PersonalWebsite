@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/PersonalWebsite/static/css/main.1207c049.css",
-    "main.js": "/PersonalWebsite/static/js/main.d18f51cd.js",
+    "main.css": "/PersonalWebsite/static/css/main.415f19fa.css",
+    "main.js": "/PersonalWebsite/static/js/main.6b8c0b45.js",
     "static/js/453.195b869a.chunk.js": "/PersonalWebsite/static/js/453.195b869a.chunk.js",
+    "static/media/Winter2024.png": "/PersonalWebsite/static/media/Winter2024.102ee6708b5136e68f28.png",
     "static/media/2023SummerFull.png": "/PersonalWebsite/static/media/2023SummerFull.e3e1166bf492af6f571e.png",
     "static/media/2021Fall2022Winter.jpg": "/PersonalWebsite/static/media/2021Fall2022Winter.82805d7304dec577c4d3.jpg",
     "static/media/fd.png": "/PersonalWebsite/static/media/fd.8bff60069496e387b78f.png",
@@ -20,12 +21,12 @@
     "static/media/2020-Winter.jpg": "/PersonalWebsite/static/media/2020-Winter.892ba1a31ec9c637a3a9.jpg",
     "static/media/M.png": "/PersonalWebsite/static/media/M.a22e7e3e79e7499d8fe4.png",
     "index.html": "/PersonalWebsite/index.html",
-    "main.1207c049.css.map": "/PersonalWebsite/static/css/main.1207c049.css.map",
-    "main.d18f51cd.js.map": "/PersonalWebsite/static/js/main.d18f51cd.js.map",
+    "main.415f19fa.css.map": "/PersonalWebsite/static/css/main.415f19fa.css.map",
+    "main.6b8c0b45.js.map": "/PersonalWebsite/static/js/main.6b8c0b45.js.map",
     "453.195b869a.chunk.js.map": "/PersonalWebsite/static/js/453.195b869a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1207c049.css",
-    "static/js/main.d18f51cd.js"
+    "static/css/main.415f19fa.css",
+    "static/js/main.6b8c0b45.js"
   ]
 }
