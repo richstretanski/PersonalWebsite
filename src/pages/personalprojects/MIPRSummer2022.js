@@ -1,23 +1,6 @@
-import React from 'react';
-import Head from '../../components/Head'; // Import Head
-import Navbar from '../../components/Navbar'; // Import Navbar
-import Footer from '../../components/Footer'; // Import Footer
-import Sidebar from '../../components/Sidebar'; // Import Sidebar
-import Titlebar from '../../components/Titlebar'; // Import Titlebar
-
 const MIPRSummer2022 = () => {
   return (
-    <div id="desktop">
-      <Head /> {/* Add Head */}
-      <Navbar /> {/* Add Navbar */}
-      <div className="academic">
-        <Titlebar title="MIPR Summer 2022" /> {/* Add Titlebar */}
-        <div className="pbanner">
-          <h2>MIPR Summer 2022</h2>
-        </div>
-        <div className="content">
-          <Sidebar /> {/* Use Sidebar component */}
-          <div className="main-content" style={{ paddingRight: '5%', paddingBottom: '10%' }}>
+    <div id="ppcontent">
             <span id="10" className="papers">MIPR Summer 2022</span>
             <br />
             <br />
@@ -34,10 +17,6 @@ const MIPRSummer2022 = () => {
               </li>
             </ul>
             <hr />
-          </div>
-        </div>
-      </div>
-      <Footer /> {/* Add Footer */}
     </div>
   );
 };

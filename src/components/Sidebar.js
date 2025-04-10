@@ -1,25 +1,140 @@
-import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link for navigation
+import React, { useState } from 'react';
+import FolderIcon from '../images/icons/directory_closed-1.png';
 
-const Sidebar = () => {
+const Sidebar = ({ setSelectedContent }) => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // State to manage dropdown visibility
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen); // Toggle dropdown visibility
+  };
+
   return (
     <aside>
-      <nav>
-        <div className="sidebar-title">Table of Contents</div>
-        <ul className="nav3">
-          <li><Link to="/personal-projects/mipr-hall-of-records">MIPR Hall of Records</Link></li>
-          <li><Link to="/personal-projects/mipr-summer-2023">MIPR Summer 2023</Link></li>
-          <li><Link to="/personal-projects/melee-tournament-stats">Melee Tournament Stats</Link></li>
-          <li><Link to="/personal-projects/mipr-winter-2023">MIPR Winter 2023</Link></li>
-          <li><Link to="/personal-projects/mipr-summer-2022">MIPR Summer 2022</Link></li>
-          <li><Link to="/personal-projects/the-ncaam-big-dance">The NCAAM Big Dance</Link></li>
-          <li><Link to="/personal-projects/mipr-fall-21-winter-22">MIPR Fall '21/Winter '22</Link></li>
-          <li><Link to="/personal-projects/mipr-winter-2020">MIPR Winter 2020</Link></li>
-          <li><Link to="/personal-projects/mipr-summer-fall-2019">MIPR Summer/Fall 2019</Link></li>
-          <li><Link to="/personal-projects/mipr-winter-2019">MIPR Winter 2019</Link></li>
-          <li><Link to="/personal-projects/mipr-fall-2018">MIPR Fall 2018</Link></li>
-          <li><Link to="/personal-projects/mipr-summer-2018">MIPR Summer 2018</Link></li>
-          <li><Link to="/personal-projects/mipr-spring-2018">MIPR Spring 2018</Link></li>
+      <nav className="nav3">
+        <ul className="treewhole">
+        <li>
+                <span className="tree" />
+                <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
+                  <button onClick={() => setSelectedContent('ThisWebsite')}>
+                    This Website
+                  </button>
+          </li>
+          <li>
+                <span className="tree" />
+                <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
+                  <button onClick={() => setSelectedContent('MIPRDLEProject')}>
+                    MIPRDLE
+                  </button>
+          </li>
+          <li>
+          <span className="tree" />
+          <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
+            <button onClick={toggleDropdown}>
+              Michigan Melee Power Rankings
+            </button>
+            {isDropdownOpen && (
+              <ul>
+                <li>
+                  <span className="tree2" />
+                  <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
+                  <button onClick={() => setSelectedContent('MIPRSummer2024')}>
+                    Summer 2024
+                  </button>
+                </li>
+                <li>
+                  <span className="tree2" />
+                  <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
+                  <button onClick={() => setSelectedContent('MIPRWinter2024')}>
+                    Winter 2024
+                  </button>
+                </li>
+                <li>
+                  <span className="tree2" />
+                  <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
+                  <button onClick={() => setSelectedContent('MIPRSummer2023')}>
+                    Summer 2023
+                  </button>
+                </li>
+                <li>
+                <span className="tree2" />
+                <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
+                  <button onClick={() => setSelectedContent('MIPRSummer2022')}>
+                    Summer 2022
+                  </button>
+                </li>
+                <li>
+                <span className="tree2" />
+                <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
+                  <button onClick={() => setSelectedContent('MIPRFall21Winter22')}>
+                    Fall '21/Winter '22
+                  </button>
+                </li>
+                <li>
+                <span className="tree2" />
+                <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
+                  <button onClick={() => setSelectedContent('MIPRWinter2020')}>
+                    Winter 2020
+                  </button>
+                </li>
+                <li>
+                <span className="tree2" />
+                <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
+                  <button onClick={() => setSelectedContent('MIPRSummerFall2019')}>
+                    Summer/Fall 2019
+                  </button>
+                </li>
+                <li>
+                <span className="tree2" />
+                <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
+                  <button onClick={() => setSelectedContent('MIPRWinter2019')}>
+                    Winter 2019
+                  </button>
+                </li>
+                <li>
+                <span className="tree2" />
+                <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
+                  <button onClick={() => setSelectedContent('MIPRFall2018')}>
+                    Fall 2018
+                  </button>
+                </li>
+                <li>
+                <span className="tree2" />
+                <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
+                  <button onClick={() => setSelectedContent('MIPRSummer2018')}>
+                    Summer 2018
+                  </button>
+                </li>
+                <li>
+                <span className="tree2" />
+                <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
+                  <button onClick={() => setSelectedContent('MIPRSpring2018')}>
+                    Spring 2018
+                  </button>
+                </li>
+              </ul>
+            )}
+          </li>
+          <li>
+          <span className="tree" />
+          <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
+            <button onClick={() => setSelectedContent('MIPRHallOfRecords')}>
+              MIPR Hall of Records
+            </button>
+          </li>
+          <li>
+          <span className="tree" />
+          <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
+            <button onClick={() => setSelectedContent('MeleeTournamentStats')}>
+              Melee Tournament Stats
+            </button>
+          </li>
+          <li>
+          <span className="tree" />
+          <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
+            <button onClick={() => setSelectedContent('TheNCAAMBigDance')}>
+              The NCAAM Big Dance
+            </button>
+          </li>
         </ul>
       </nav>
     </aside>

@@ -16,10 +16,9 @@ const TourneyStats = () => {
         <div className="pbanner">
           <h2>Personal Projects</h2>
         </div>
-        <embed
-          src="https://richtheinvincible.github.io/TourneyStats/"
-          style={{ width: '100%', height: '100%' }}
-        ></embed>
+          <embed
+            src="https://richtheinvincible.github.io/TourneyStats/"
+          ></embed>
       </div>
       <Footer /> {/* Add Footer */}
     </div>

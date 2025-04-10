@@ -1,20 +1,6 @@
-import React from 'react';
-import Head from '../../components/Head'; // Import Head
-import Navbar from '../../components/Navbar'; // Import Navbar
-import Footer from '../../components/Footer'; // Import Footer
-import Titlebar from '../../components/Titlebar'; // Import Titlebar
-
 const InfosecProjects = () => {
   return (
-    <div id="desktop">
-      <Head /> {/* Add Head */}
-      <Navbar /> {/* Add Navbar */}
-      <div className="academic">
-        <Titlebar title="InfoSec Projects" /> {/* Add Titlebar */}
-        <div className="mbanner">
-          <h2>InfoSec Projects</h2>
-        </div>
-        <div className="content" style={{ paddingRight: '5%', paddingBottom: '10%' }}>
+      <div id = "ppcontent">
           <span className="papers">RansomedLSTM: Ransomware Detection using Recurrent Neural Networks</span>
           <p>(with M. Tayabb and J. Carlton)</p>
           <br />
@@ -57,9 +43,6 @@ const InfosecProjects = () => {
             <li>Wireless Network Security & Privacy (Graduate)</li>
           </ul>
         </div>
-      </div>
-      <Footer /> {/* Add Footer */}
-    </div>
   );
 };
 

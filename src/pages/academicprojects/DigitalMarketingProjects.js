@@ -1,20 +1,8 @@
-import React from 'react';
-import Head from '../../components/Head'; // Import Head
-import Navbar from '../../components/Navbar'; // Import Navbar
-import Footer from '../../components/Footer'; // Import Footer
-import Titlebar from '../../components/Titlebar'; // Import Titlebar
+
 
 const DigitalMarketingProjects = () => {
   return (
-    <div id="desktop">
-      <Head /> {/* Add Head */}
-      <Navbar /> {/* Add Navbar */}
-      <div className="academic">
-        <Titlebar title="Digital Marketing Projects" /> {/* Add Titlebar */}
-        <div className="mbanner">
-          <h2>Digital Marketing Projects</h2>
-        </div>
-        <div className="content" style={{ paddingRight: '5%', paddingBottom: '10%' }}>
+        <div id="ppcontent">
           <span className="papers">Warby Parker Marketing Strategy</span> (with K. Domke, J. Jodoin, and J. Rostkowski)
           <br />
           <br />
@@ -55,9 +43,6 @@ const DigitalMarketingProjects = () => {
             <li>The Legal Environment of Business</li>
           </ul>
         </div>
-      </div>
-      <Footer /> {/* Add Footer */}
-    </div>
   );
 };
 

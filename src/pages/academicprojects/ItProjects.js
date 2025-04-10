@@ -1,20 +1,6 @@
-import React from 'react';
-import Head from '../../components/Head'; // Import Head
-import Navbar from '../../components/Navbar'; // Import Navbar
-import Footer from '../../components/Footer'; // Import Footer
-import Titlebar from '../../components/Titlebar'; // Import Titlebar
-
 const ItProjects = () => {
   return (
-    <div id="desktop">
-      <Head /> {/* Add Head */}
-      <Navbar /> {/* Add Navbar */}
-      <div className="academic">
-        <Titlebar title="Information Technology Projects" /> {/* Add Titlebar */}
-        <div className="mbanner">
-          <h2>Information Technology Projects</h2>
-        </div>
-        <div className="content" style={{ paddingRight: '5%', paddingBottom: '10%' }}>
+    <div id = "ppcontent">
           <span className="papers">Active Measurements of Routes, Losses, and Delays (tracert)</span>
           <br />
           <br />
@@ -31,7 +17,7 @@ const ItProjects = () => {
           </p>
           <hr />
           <span className="papers">
-            <a href="https://richtheinvincible.github.io/tictactoe/" target="_blank">Web TicTacToe</a>
+            Web TicTacToe
           </span>
           <br />
           <br />
@@ -60,10 +46,8 @@ const ItProjects = () => {
             ran qualitative and quantitative tests with real users...
           </p>
           <hr />
-          <span className="papers">
-            <a href="http://papers.richstretanski.com/SoftwareProjectManagementPlan.pdf" target="_blank">
+          <span className="papers">  
               Software Project Management Plan
-            </a>
           </span>{' '}
           (with S. Desai, K. Joseph, S. Masilamani, E. Rhodes)
           <br />
@@ -90,9 +74,6 @@ const ItProjects = () => {
             <li>Networking & Collaborative Computing</li>
           </ul>
         </div>
-      </div>
-      <Footer /> {/* Add Footer */}
-    </div>
   );
 };
 

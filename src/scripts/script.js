@@ -19,3 +19,12 @@ export function background() {
     t.value = "NO";
   }
 }
+
+export const handleImageClick = (imageSrc, setPopoutImage, currentPopoutImage) => {
+  // Toggle the popout image
+  if (currentPopoutImage === imageSrc) {
+    setPopoutImage(null); // Close the popout if the same image is clicked again
+  } else {
+    setPopoutImage(imageSrc); // Set the clicked image as the popout image
+  }
+};

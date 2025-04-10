@@ -16,7 +16,6 @@ const MIPRDLE = () => {
         </div>
         <embed
           src="https://richtheinvincible.github.io/MIPRDLE/"
-          style={{ width: '100%', height: '100%' }}
         ></embed>
       </div>
       <Footer /> {/* Add Footer */}

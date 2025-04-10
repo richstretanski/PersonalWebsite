@@ -11,8 +11,8 @@ const Titlebar = ({ title }) => {
         <span className="titlebar-text">{title}</span>
       </div>
       <div className="titlebar-buttons">
-        <button className="titlebar-button minimize" title="Minimize" onClick={handleMinimize}>_</button>
-        <button className="titlebar-button maximize" title="Maximize" onClick={handleMaximize}>□</button>
+        <button className="titlebar-button minimize" title="Minimize" onClick={() => handleMinimize()}>_</button>
+        <button className="titlebar-button maximize" title="Maximize" onClick={() => handleMaximize()}>□</button>
         <button className="titlebar-button close" title="Close" onClick={() => handleClose()}>X</button>
       </div>
     </div>

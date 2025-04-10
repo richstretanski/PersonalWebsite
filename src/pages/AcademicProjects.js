@@ -1,11 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Head from '../components/Head'; // Import Head
 import Navbar from '../components/Navbar'; // Import Navbar
 import Footer from '../components/Footer';
 import Titlebar from '../components/Titlebar'; // Import Titlebar
 import AcademicSidebar from '../components/AcademicSidebar'; // Ensure AcademicSidebar is imported
+import AcademicHome from './academicprojects/AcademicHome'; // Import AcademicHome
+import DigitalMarketingProjects from './academicprojects/DigitalMarketingProjects';
+import InfosecProjects from './academicprojects/InfosecProjects';
+import ItProjects from './academicprojects/ItProjects';
 
 const AcademicProjects = () => {
+  const [selectedContent, setSelectedContent] = useState('AcademicHome'); // Default to AcademicHome
+
+  const renderContent = () => {
+    switch (selectedContent) {
+      case 'DigitalMarketingProjects':
+        return <DigitalMarketingProjects />;
+      case 'InfosecProjects':
+        return <InfosecProjects />;
+      case 'ItProjects':
+        return <ItProjects />;
+      case 'AcademicHome':
+      default:
+        return <AcademicHome />;
+    }
+  };
+
   return (
     <div id="desktop">
       <Head /> {/* Add Head */}
@@ -15,16 +35,9 @@ const AcademicProjects = () => {
         <div className="mbanner">
           <h2>About Academic Projects</h2>
         </div>
-        <div className="content" style={{ paddingRight: '5%', paddingBottom: '10%' }}>
-          <AcademicSidebar /> {/* Ensure AcademicSidebar is rendered */}
-          <p>
-            This is an archive of some of my academic projects that I worked on while studying Digital Marketing (Undergraduate), Information Technology Management (Undergraduate), and Information Security (Graduate) at the University of Michigan-Dearborn. Many of my projects were team projects since the College of Business values being able to work well in a team setting. If a project was a team project, contributors were credited as such.
-          </p>
-          <br />
-          <p>
-            At some point, I may link the documents referenced, but for now, I'm going to leave them as project summaries.
-          </p>
-          <br />
+        <div className="content">
+          <AcademicSidebar setSelectedContent={setSelectedContent} /> {/* Pass setSelectedContent */}  
+          {renderContent()} {/* Render the selected content */}
         </div>
       </div>
       <Footer />

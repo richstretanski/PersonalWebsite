@@ -1,11 +1,18 @@
 import React from 'react';
-import { background } from '../scripts/script'; // Import the background function
+import { useBackground } from '../context/BackgroundContext'; // Import useBackground
 
 const Footer = () => {
+  const { toggleBackground } = useBackground(); // Use the global toggleBackground function
+
+  const handleToggleBackground = () => {
+    console.log('Start button clicked'); // Debug log
+    toggleBackground(); // Call the toggleBackground function
+  };
+
   return (
     <div id="toolbar">
       <div className="toolbar-start-menu">
-        <button onClick={background} value="NO" id="start-button" className="start-button">
+        <button onClick={handleToggleBackground} className="start-button">
           Start
         </button>
       </div>

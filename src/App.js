@@ -1,5 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async'; // Import HelmetProvider
+import { BackgroundProvider } from './context/BackgroundContext'; // Import BackgroundProvider
 import Head from './components/Head'; // Import Head
 import Navbar from './components/Navbar'; // Import Navbar
 //pages
@@ -11,7 +13,6 @@ import Resume from './pages/Resume';
 import TourneyStats from './pages/TourneyStats'; // Import TourneyStats
 import MIPRDLE from './pages/MIPRDLE'; // Import MIPRDLE
 import Footer from './components/Footer';
-
 //personal project pages
 import MIPRHallOfRecords from './pages/personalprojects/MIPRHallOfRecords';
 import MIPRSummer2023 from './pages/personalprojects/MIPRSummer2023';
@@ -82,9 +83,13 @@ const App = () => {
   const basename = process.env.NODE_ENV === 'production' ? '/PersonalWebsite' : '/';
 
   return (
-    <Router basename={basename}>
-      <AppContent />
-    </Router>
+    <HelmetProvider>
+      <BackgroundProvider> {/* Wrap the app with BackgroundProvider */}
+        <Router basename={basename}>
+          <AppContent />
+        </Router>
+      </BackgroundProvider>
+    </HelmetProvider>
   );
 };
 
