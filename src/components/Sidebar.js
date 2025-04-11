@@ -15,21 +15,21 @@ const Sidebar = ({ setSelectedContent }) => {
         <li>
                 <span className="tree" />
                 <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
-                  <button onClick={() => setSelectedContent('ThisWebsite')}>
+                  <button className="sidebar-button" onClick={() => setSelectedContent('ThisWebsite')}>
                     This Website
                   </button>
           </li>
           <li>
                 <span className="tree" />
                 <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
-                  <button onClick={() => setSelectedContent('MIPRDLEProject')}>
+                  <button className="sidebar-button" onClick={() => setSelectedContent('MIPRDLEProject')}>
                     MIPRDLE
                   </button>
           </li>
           <li>
           <span className="tree" />
           <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
-            <button onClick={toggleDropdown}>
+            <button className="sidebar-button" onClick={toggleDropdown}>
               Michigan Melee Power Rankings
             </button>
             {isDropdownOpen && (
@@ -37,77 +37,77 @@ const Sidebar = ({ setSelectedContent }) => {
                 <li>
                   <span className="tree2" />
                   <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
-                  <button onClick={() => setSelectedContent('MIPRSummer2024')}>
+                  <button className="sidebar-button" onClick={() => setSelectedContent('MIPRSummer2024')}>
                     Summer 2024
                   </button>
                 </li>
                 <li>
                   <span className="tree2" />
                   <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
-                  <button onClick={() => setSelectedContent('MIPRWinter2024')}>
+                  <button className="sidebar-button" onClick={() => setSelectedContent('MIPRWinter2024')}>
                     Winter 2024
                   </button>
                 </li>
                 <li>
                   <span className="tree2" />
                   <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
-                  <button onClick={() => setSelectedContent('MIPRSummer2023')}>
+                  <button className="sidebar-button" onClick={() => setSelectedContent('MIPRSummer2023')}>
                     Summer 2023
                   </button>
                 </li>
                 <li>
                 <span className="tree2" />
                 <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
-                  <button onClick={() => setSelectedContent('MIPRSummer2022')}>
+                  <button className="sidebar-button" onClick={() => setSelectedContent('MIPRSummer2022')}>
                     Summer 2022
                   </button>
                 </li>
                 <li>
                 <span className="tree2" />
                 <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
-                  <button onClick={() => setSelectedContent('MIPRFall21Winter22')}>
+                  <button className="sidebar-button" onClick={() => setSelectedContent('MIPRFall21Winter22')}>
                     Fall '21/Winter '22
                   </button>
                 </li>
                 <li>
                 <span className="tree2" />
                 <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
-                  <button onClick={() => setSelectedContent('MIPRWinter2020')}>
+                  <button className="sidebar-button" onClick={() => setSelectedContent('MIPRWinter2020')}>
                     Winter 2020
                   </button>
                 </li>
                 <li>
                 <span className="tree2" />
                 <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
-                  <button onClick={() => setSelectedContent('MIPRSummerFall2019')}>
+                  <button className="sidebar-button" onClick={() => setSelectedContent('MIPRSummerFall2019')}>
                     Summer/Fall 2019
                   </button>
                 </li>
                 <li>
                 <span className="tree2" />
                 <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
-                  <button onClick={() => setSelectedContent('MIPRWinter2019')}>
+                  <button className="sidebar-button" onClick={() => setSelectedContent('MIPRWinter2019')}>
                     Winter 2019
                   </button>
                 </li>
                 <li>
                 <span className="tree2" />
                 <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
-                  <button onClick={() => setSelectedContent('MIPRFall2018')}>
+                  <button className="sidebar-button" onClick={() => setSelectedContent('MIPRFall2018')}>
                     Fall 2018
                   </button>
                 </li>
                 <li>
                 <span className="tree2" />
                 <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
-                  <button onClick={() => setSelectedContent('MIPRSummer2018')}>
+                  <button className="sidebar-button" onClick={() => setSelectedContent('MIPRSummer2018')}>
                     Summer 2018
                   </button>
                 </li>
                 <li>
                 <span className="tree2" />
                 <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
-                  <button onClick={() => setSelectedContent('MIPRSpring2018')}>
+                  <button className="sidebar-button" onClick={() => setSelectedContent('MIPRSpring2018')}>
                     Spring 2018
                   </button>
                 </li>
@@ -117,21 +117,21 @@ const Sidebar = ({ setSelectedContent }) => {
           <li>
           <span className="tree" />
           <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
-            <button onClick={() => setSelectedContent('MIPRHallOfRecords')}>
+            <button className="sidebar-button" onClick={() => setSelectedContent('MIPRHallOfRecords')}>
               MIPR Hall of Records
             </button>
           </li>
           <li>
           <span className="tree" />
           <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
-            <button onClick={() => setSelectedContent('MeleeTournamentStats')}>
+            <button className="sidebar-button" onClick={() => setSelectedContent('MeleeTournamentStats')}>
               Melee Tournament Stats
             </button>
           </li>
           <li>
           <span className="tree" />
           <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
-            <button onClick={() => setSelectedContent('TheNCAAMBigDance')}>
+            <button className="sidebar-button" onClick={() => setSelectedContent('TheNCAAMBigDance')}>
               The NCAAM Big Dance
             </button>
           </li>

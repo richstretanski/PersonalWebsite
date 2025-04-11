@@ -9,21 +9,21 @@ const AcademicSidebar = ({ setSelectedContent }) => {
           <li>
             <span className="tree"></span>
             <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
-            <button onClick={() => setSelectedContent('InfosecProjects')}>
+            <button className="sidebar-button" onClick={() => setSelectedContent('InfosecProjects')}>
               InfoSec Projects
             </button>
           </li>
           <li>
             <span className="tree"></span>
             <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
-            <button onClick={() => setSelectedContent('ItProjects')}>
+            <button className="sidebar-button" onClick={() => setSelectedContent('ItProjects')}>
               IT Projects
             </button>
           </li>
           <li>
             <span className="tree"></span>
             <img src={FolderIcon} alt="Folder Icon" className="folder-icon" />
-            <button onClick={() => setSelectedContent('DigitalMarketingProjects')}>
+            <button className="sidebar-button" onClick={() => setSelectedContent('DigitalMarketingProjects')}>
               Digital Marketing Projects
             </button>
           </li>

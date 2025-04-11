@@ -427,7 +427,8 @@ div.pr{
   padding: 0;
 
 }
-.nav3 button {
+.nav3 .sidebar-button {
+  all: unset; /* Reset all inherited styles */
   background-color: rgba(0, 0, 0, 0.0);
   color: white;
   border: none;
