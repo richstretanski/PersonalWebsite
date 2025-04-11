@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PersonalWebsite/static/css/main.415f19fa.css",
-    "main.js": "/PersonalWebsite/static/js/main.6b8c0b45.js",
+    "main.css": "/PersonalWebsite/static/css/main.670c2411.css",
+    "main.js": "/PersonalWebsite/static/js/main.d0b110ef.js",
     "static/js/453.195b869a.chunk.js": "/PersonalWebsite/static/js/453.195b869a.chunk.js",
     "static/media/Winter2024.png": "/PersonalWebsite/static/media/Winter2024.102ee6708b5136e68f28.png",
     "static/media/2023SummerFull.png": "/PersonalWebsite/static/media/2023SummerFull.e3e1166bf492af6f571e.png",
@@ -21,12 +21,12 @@
     "static/media/2020-Winter.jpg": "/PersonalWebsite/static/media/2020-Winter.892ba1a31ec9c637a3a9.jpg",
     "static/media/M.png": "/PersonalWebsite/static/media/M.a22e7e3e79e7499d8fe4.png",
     "index.html": "/PersonalWebsite/index.html",
-    "main.415f19fa.css.map": "/PersonalWebsite/static/css/main.415f19fa.css.map",
-    "main.6b8c0b45.js.map": "/PersonalWebsite/static/js/main.6b8c0b45.js.map",
+    "main.670c2411.css.map": "/PersonalWebsite/static/css/main.670c2411.css.map",
+    "main.d0b110ef.js.map": "/PersonalWebsite/static/js/main.d0b110ef.js.map",
     "453.195b869a.chunk.js.map": "/PersonalWebsite/static/js/453.195b869a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.415f19fa.css",
-    "static/js/main.6b8c0b45.js"
+    "static/css/main.670c2411.css",
+    "static/js/main.d0b110ef.js"
   ]
 }
