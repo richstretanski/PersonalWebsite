@@ -34,7 +34,7 @@ import ItProjects from './pages/academicprojects/ItProjects'; // Import ItProjec
 
 const AppContent = () => {
   const location = useLocation(); // Get the current location
-  const basename = process.env.NODE_ENV === 'production' ? '/PersonalWebsite' : '/';
+  const basename = process.env.NODE_ENV === 'production' ? '/' : '/';
 
   // Adjust the condition to include the basename
   const isHomePage = location.pathname === '/' || location.pathname === basename;
