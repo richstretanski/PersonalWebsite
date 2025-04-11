@@ -469,3 +469,55 @@ div.pr{
   margin-left: 1.4rem;
 }
 /*---------------/Sidebars-------------------*/
+
+/*---------------Mobile Styling-------------------*/
+@media only screen and (max-width: 900px) {
+  .about1, .about4 {
+    display: none; /* Hide the containers */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Ensure Navbar is in front of #desktop but behind .content and .academic */
+  .nav-container {
+    position: fixed;
+    z-index: 1; /* Place it above #desktop */
+    opacity: 1; /* Fully visible */
+    pointer-events: auto; /* Allow interaction */
+  }
+
+  #desktop {
+    z-index: 0; /* Ensure it is behind the Navbar */
+  }
+
+  .container, .academic {
+    z-index: 2; /* Place it above the Navbar */
+    position: relative; /* Ensure proper stacking context */
+    width: 100%;
+    margin: 0;
+    box-shadow: none; /* Remove shadow for a cleaner look */
+    border: none; /* Remove borders for simplicity */
+  }
+
+  /* Adjust padding and layout for mobile */
+  .content {
+    flex-direction: column; /* Stack content vertically */
+    padding: 10px; /* Add padding for better spacing */
+  }
+
+  .pbanner, .mbanner {
+    text-align: center; /* Center-align banners */
+    padding: 10px;
+  }
+
+  .about1 img, .pr img {
+    width: 100%; /* Ensure images are responsive */
+    height: auto;
+  }
+
+  .nav3 {
+    min-height: auto; /* Adjust sidebar height */
+    overflow: visible; /* Ensure content is visible */
+  }
+}
+/*---------------/Mobile Styling-------------------*/
