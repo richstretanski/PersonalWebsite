@@ -1,8 +1,9 @@
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; /* Reapply box-sizing */
 }
 
 @font-face {
+    all: unset; /* Reset all inherited styles */
     font-family: "FreePixel";
     src: url("https://sadhost.neocities.org/fonts/FreePixel.ttf") format("truetype");
 }
@@ -23,8 +24,9 @@ a.link{
   color: rgb(255, 255, 255);
 }
 h1{
+  margin: 20px 0; /* Explicitly set margins */
+  font-size: 38pt; /* Ensure font size is as intended */
   color: white;
-  font-size: 38pt;
   font-weight: bold;
 }
 h2{
