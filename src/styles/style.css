@@ -265,6 +265,7 @@ li.about4navli a:hover:not(.active) {
   background-color: rgba(0, 0, 0, 0.7);
   display: flex; /* Use flexbox for layout */
   flex-direction: column; /* Stack children vertically */
+  
 }
 
 .content{
@@ -421,7 +422,7 @@ div.pr{
   min-height: 100%; /* Ensure it extends to the full height of .academic2 */
   border-right: 4px solid #c0c0c0;
   width: 100%; /* Ensure it matches the width of .sidebar-title */
-  height: 100% !important; /* Ensure it fills the height of its parent container */
+  height: 100%; /* Ensure it fills the height of its parent container */
   overflow: auto;
 }
 .nav3 ul {
@@ -494,9 +495,11 @@ div.pr{
     z-index: 2; /* Place it above the Navbar */
     position: relative; /* Ensure proper stacking context */
     width: 100%;
+    height: 100%;
     margin: 0;
     box-shadow: none; /* Remove shadow for a cleaner look */
     border: none; /* Remove borders for simplicity */
+    overflow: auto;
   }
 
   /* Adjust padding and layout for mobile */
@@ -512,12 +515,33 @@ div.pr{
 
   .about1 img, .pr img {
     width: 100%; /* Ensure images are responsive */
-    height: auto;
+    height: 100%;
+  }
+  .ppcontent{
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    max-height: auto;
+    height: auto; /* Allow content to adjust height */
+    padding: 0; /* Remove padding for mobile */
+    overflow: none;
   }
 
+  aside{
+    margin: 0;
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+
+    height: 30%;
+    max-height: 30%;
+    min-height: 30%; 
+  }
   .nav3 {
-    min-height: auto; /* Adjust sidebar height */
-    overflow: visible; /* Ensure content is visible */
+    margin: 0;
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
   }
 }
 /*---------------/Mobile Styling-------------------*/
