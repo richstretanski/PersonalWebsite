@@ -34,6 +34,8 @@
 }
 
 .custom-titlebar-button {
+  all: unset; /* Reset all inherited styles */
+  color: black;
   background: #c0c0c0;
   border: 2px solid #7c7c7c;
   border-top-color: #fff;
