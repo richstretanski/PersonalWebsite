@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PersonalWebsite/static/css/main.1762ff22.css",
-    "main.js": "/PersonalWebsite/static/js/main.2a5a9d19.js",
+    "main.css": "/PersonalWebsite/static/css/main.58ebca02.css",
+    "main.js": "/PersonalWebsite/static/js/main.8665bd09.js",
     "static/js/453.195b869a.chunk.js": "/PersonalWebsite/static/js/453.195b869a.chunk.js",
     "static/media/Winter2024.png": "/PersonalWebsite/static/media/Winter2024.102ee6708b5136e68f28.png",
     "static/media/2023SummerFull.png": "/PersonalWebsite/static/media/2023SummerFull.e3e1166bf492af6f571e.png",
@@ -13,7 +13,6 @@
     "static/media/wallpaper.jpg": "/PersonalWebsite/static/media/wallpaper.12ab45d0a6c78e381d8a.jpg",
     "static/media/bwIMG_1708.jpeg": "/PersonalWebsite/static/media/bwIMG_1708.d9bf62616a632361717d.jpeg",
     "static/media/2018summer.jpg": "/PersonalWebsite/static/media/2018summer.5055453f134ab497a712.jpg",
-    "static/media/gamertag.png": "/PersonalWebsite/static/media/gamertag.c4e9ead03d22494c2766.png",
     "static/media/2018Spring.jpg": "/PersonalWebsite/static/media/2018Spring.ace4d4fddb16e00d9783.jpg",
     "static/media/2018fall.jpg": "/PersonalWebsite/static/media/2018fall.337e63bc6c7b67df229d.jpg",
     "static/media/2019summerfall.jpg": "/PersonalWebsite/static/media/2019summerfall.ad40cae397d39b205e3e.jpg",
@@ -21,12 +20,12 @@
     "static/media/2020-Winter.jpg": "/PersonalWebsite/static/media/2020-Winter.892ba1a31ec9c637a3a9.jpg",
     "static/media/M.png": "/PersonalWebsite/static/media/M.a22e7e3e79e7499d8fe4.png",
     "index.html": "/PersonalWebsite/index.html",
-    "main.1762ff22.css.map": "/PersonalWebsite/static/css/main.1762ff22.css.map",
-    "main.2a5a9d19.js.map": "/PersonalWebsite/static/js/main.2a5a9d19.js.map",
+    "main.58ebca02.css.map": "/PersonalWebsite/static/css/main.58ebca02.css.map",
+    "main.8665bd09.js.map": "/PersonalWebsite/static/js/main.8665bd09.js.map",
     "453.195b869a.chunk.js.map": "/PersonalWebsite/static/js/453.195b869a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1762ff22.css",
-    "static/js/main.2a5a9d19.js"
+    "static/css/main.58ebca02.css",
+    "static/js/main.8665bd09.js"
   ]
 }
