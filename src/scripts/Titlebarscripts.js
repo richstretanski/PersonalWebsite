@@ -6,7 +6,7 @@ export const useTitlebarFunctions = () => {
   const handleClose = () => {
     try {
       console.log('handleClose called'); // Debug log to ensure the function is triggered
-      navigate('/PersonalWebsite'); // Navigate back to the root page
+      navigate('/'); // Navigate back to the root page
     } catch (error) {
       console.error('Error navigating to the root page:', error);
     }
