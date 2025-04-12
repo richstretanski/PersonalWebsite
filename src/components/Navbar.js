@@ -9,7 +9,6 @@ import dl from '../images/icons/DL.png';
 
 const Navbar = () => {
   const handleClick = (e) => {
-    console.log('Link clicked:', e.target); // Debug log
   };
 
   return (

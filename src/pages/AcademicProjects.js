@@ -3,11 +3,18 @@ import Head from '../components/Head'; // Import Head
 import Navbar from '../components/Navbar'; // Import Navbar
 import Footer from '../components/Footer';
 import Titlebar from '../components/Titlebar'; // Import Titlebar
-import AcademicSidebar from '../components/AcademicSidebar'; // Ensure AcademicSidebar is imported
+import Sidebar from '../components/Sidebar'; // Import updated Sidebar
 import AcademicHome from './academicprojects/AcademicHome'; // Import AcademicHome
 import DigitalMarketingProjects from './academicprojects/DigitalMarketingProjects';
 import InfosecProjects from './academicprojects/InfosecProjects';
 import ItProjects from './academicprojects/ItProjects';
+import Banner from '../components/Banner'; // Import Banner component
+
+const academicProjectItems = [
+  { label: 'InfoSec Projects', contentKey: 'InfosecProjects' },
+  { label: 'IT Projects', contentKey: 'ItProjects' },
+  { label: 'Digital Marketing Projects', contentKey: 'DigitalMarketingProjects' },
+];
 
 const AcademicProjects = () => {
   const [selectedContent, setSelectedContent] = useState('AcademicHome'); // Default to AcademicHome
@@ -32,11 +39,9 @@ const AcademicProjects = () => {
       <Navbar /> {/* Add Navbar */}
       <div className="academic">
         <Titlebar title="Academic Projects" /> {/* Add Titlebar */}
-        <div className="mbanner">
-          <h2>About Academic Projects</h2>
-        </div>
+        <Banner title="Academic Projects" backgroundImage={require('../images/M.png')} /> {/* Pass imported image */}
         <div className="content">
-          <AcademicSidebar setSelectedContent={setSelectedContent} /> {/* Pass setSelectedContent */}  
+          <Sidebar items={academicProjectItems} setSelectedContent={setSelectedContent} />
           {renderContent()} {/* Render the selected content */}
         </div>
       </div>

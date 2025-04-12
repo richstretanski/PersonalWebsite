@@ -8,12 +8,12 @@ const MIPRSummerFall2019 = ({ handleImageClick }) => {
       <br />
       <ul className="personal">
         <li>
-          <a href="https://x.com/MichiganMelee/status/1213305588614086656?s=20" target="_blank">
+          <a href="https://x.com/MichiganMelee/status/1213305588614086656?s=20" target="_blank" rel="noopener noreferrer">
             Announcement Tweet
           </a>
         </li>
         <li>
-          <a href="https://docs.google.com/spreadsheets/d/1S8pwlMFYxy7jXP5Bkq60Xh0tP6vnZsnGnWZpN18rknE/edit?usp=sharing" target="_blank">
+          <a href="https://docs.google.com/spreadsheets/d/1S8pwlMFYxy7jXP5Bkq60Xh0tP6vnZsnGnWZpN18rknE/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
             Ballot Results
           </a>
         </li>

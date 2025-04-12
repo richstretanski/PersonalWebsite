@@ -13,7 +13,7 @@ const MIPRSummer2023 = ({ handleImageClick }) => {
       </p>
       <ul className="personal">
         <li>
-          <a href="https://x.com/MichiganMelee/status/1715161077229760950?s=20" target="_blank">
+          <a href="https://x.com/MichiganMelee/status/1715161077229760950?s=20" target="_blank" rel="noopener noreferrer">
             Announcement Video
           </a>
         </li>
@@ -21,12 +21,13 @@ const MIPRSummer2023 = ({ handleImageClick }) => {
           <a
             href="https://docs.google.com/spreadsheets/d/1OlOG5f7Nd1XVDMvNdkwKrvLQXhVoEbjSP3Z2VsEoM8s/edit?usp=sharing"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Ballot Results
           </a>
         </li>
         <li>
-          <a href="https://lookerstudio.google.com/s/mNI367Dq58c" target="_blank">
+          <a href="https://lookerstudio.google.com/s/mNI367Dq58c" target="_blank" rel="noopener noreferrer">
             Data Visualization (Looker)
           </a>
         </li>

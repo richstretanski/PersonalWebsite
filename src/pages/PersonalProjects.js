@@ -3,7 +3,7 @@ import Head from '../components/Head'; // Import Head
 import Navbar from '../components/Navbar'; // Import Navbar
 import Footer from '../components/Footer'; // Import Footer
 import Titlebar from '../components/Titlebar'; // Import Titlebar
-import Sidebar from '../components/Sidebar'; // Import Sidebar
+import Sidebar from '../components/Sidebar'; // Import updated Sidebar
 import MIPRHallOfRecords from './personalprojects/MIPRHallOfRecords';
 import MIPRSummer2023 from './personalprojects/MIPRSummer2023';
 import MeleeTournamentStats from './personalprojects/MeleeTournamentStats';
@@ -23,6 +23,32 @@ import MIPRWinter2024 from './personalprojects/MIPRWinter2024';
 import MIPRSummer2024 from './personalprojects/MIPRSummer2024';
 import PersonalAbout from './personalprojects/PersonalAbout'; // Import PersonalAbout
 import ThisWebsite from './personalprojects/ThisWebsite';
+import Banner from '../components/Banner'; // Import Banner component
+
+const personalProjectItems = [
+  { label: 'This Website', contentKey: 'ThisWebsite' },
+  { label: 'MIPRDLE', contentKey: 'MIPRDLEProject' },
+  {
+    label: 'Michigan Melee Power Rankings',
+    children: [
+      { label: 'Summer 2024', contentKey: 'MIPRSummer2024' },
+      { label: 'Winter 2024', contentKey: 'MIPRWinter2024' },
+      { label: 'Summer 2023', contentKey: 'MIPRSummer2023' },
+      { label: 'Winter 2023', contentKey: 'MIPRWinter2023' },
+      { label: 'Summer 2022', contentKey: 'MIPRSummer2022' },
+      { label: "Fall '21 Winter '22", contentKey: 'MIPRFall21Winter22' },
+      { label: "Winter 2020", contentKey: 'MIPRWinter2020' },
+      { label: "Summer/Fall 2019", contentKey: 'MIPRSummerFall2019' },
+      { label: "Winter 2019", contentKey: 'MIPRWinter2019' },
+      { label: "Fall 2018", contentKey: 'MIPRFall2018' },
+      { label: "Summer 2018", contentKey: 'MIPRSummer2018' },
+      { label: "Spring 2018", contentKey: 'MIPRSpring2018' }
+    ],
+  },
+  { label: 'MIPR Hall of Records', contentKey: 'MIPRHallOfRecords' },
+  { label: 'Melee Tournament Stats', contentKey: 'MeleeTournamentStats' },
+  { label: 'The NCAAM Big Dance', contentKey: 'TheNCAAMBigDance' },
+];
 
 const PersonalProjects = () => {
   const [selectedContent, setSelectedContent] = useState('PersonalAbout'); // Default to PersonalAbout
@@ -81,11 +107,9 @@ const PersonalProjects = () => {
       <Navbar /> {/* Add Navbar */}
       <div className="academic">
         <Titlebar title="Personal Projects" /> {/* Add Titlebar */}
-        <div className="pbanner">
-          <h2>Personal Projects</h2>
-        </div>
+        <Banner title="Personal Projects" backgroundImage={require('../images/fd.png')} /> {/* Pass imported image */}
         <div className="content">
-          <Sidebar setSelectedContent={setSelectedContent} /> {/* Pass setSelectedContent */}
+          <Sidebar items={personalProjectItems} setSelectedContent={setSelectedContent} /> {/* Pass items and setSelectedContent */}
           {renderContent()} {/* Render the selected content */}
         </div>
       </div>

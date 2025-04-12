@@ -17,19 +17,7 @@ export const useTitlebarFunctions = () => {
   };
 
   const handleMaximize = () => {
-    console.log('Maximize button clicked');
-    const container = document.querySelector('.academic') || document.querySelector('.content');
-    if (container) {
-      container.style.position = 'fixed';
-      container.style.top = '0';
-      container.style.left = '0';
-      container.style.width = '100vw';
-      container.style.height = '100vh';
-      container.style.zIndex = '9999';
-      container.style.backgroundColor = 'white'; // Optional: Ensure background covers other elements
-    } else {
-      console.error('No .academic or .content container found to maximize.');
-    }
+
   };
 
   return {

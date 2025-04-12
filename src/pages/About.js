@@ -4,6 +4,8 @@ import Navbar from '../components/Navbar'; // Import Navbar
 import Titlebar from '../components/Titlebar';
 import Footer from '../components/Footer'; // Import Footer
 import profileImage from '../images/bwIMG_1708.jpeg'; // Import profile image
+import Banner from '../components/Banner'; // Import Banner component
+import bannerImage from '../images/M.png'; // Import the banner image
 import { Link } from 'react-router-dom';
 
 
@@ -14,10 +16,8 @@ const About = () => {
       <Navbar /> {/* Add Navbar */}
       
       <div className="container">
-        <Titlebar title="About" /> {/* Move Titlebar inside .container */}
-        <div className="mbanner">
-          <h2>Rich Stretanski</h2>
-        </div>
+        <Titlebar title="About" />
+        <Banner title="Rich Stretanski" backgroundImage={bannerImage} /> {/* Pass imported image */}
         <div className="about1">
           <img className="photo" src={profileImage} alt="Rich Stretanski" />
         </div>

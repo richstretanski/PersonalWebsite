@@ -3,6 +3,7 @@ import Head from '../components/Head'; // Import Head
 import Navbar from '../components/Navbar'; // Import Navbar
 import Footer from '../components/Footer'; // Import Footer
 import Titlebar from '../components/Titlebar'; // Import Titlebar
+import Banner from '../components/Banner';
 
 const MIPRDLE = () => {
   return (
@@ -11,9 +12,7 @@ const MIPRDLE = () => {
       <Navbar /> {/* Add Navbar */}
       <div className="academic">
         <Titlebar title="MIPRDLE" /> {/* Add Titlebar */}
-        <div className="pbanner">
-          <h2>Personal Projects</h2>
-        </div>
+        <Banner title="MIPRDLE" backgroundImage={require('../images/fd.png')} /> {/* Pass imported image */}
         <embed
           src="https://richtheinvincible.github.io/MIPRDLE/"
         ></embed>

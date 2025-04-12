@@ -1,0 +1,101 @@
+/* Windows 98-style alert */
+.win98-alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  border: 2px solid black;
+  background-color: #c0c0c0;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 12px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  border-left-color: white;
+  border-top-color: white;
+}
+
+.win98-alert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #00007b, #0000ff, #00007b);
+  color: white;
+  padding: 4px;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+
+.win98-alert-title {
+  margin: 0;
+  padding-left: 5px;
+}
+
+.win98-alert-controls {
+  display: flex;
+  gap: 2px;
+}
+
+.win98-alert-header button {
+    all: unset; /* Reset all inherited styles */
+    color: black;
+    background: #c0c0c0;
+    border: 2px solid #7c7c7c;
+    border-top-color: #fff;
+    border-left-color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 16px;
+    cursor: pointer;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    margin-right: 2px;
+    width: 20px;
+    height: 20px;
+}
+
+.win98-alert-controls button:hover {
+  background-color: #a7a7a7;
+}
+
+.win98-alert-controls button.win98-alert-close {
+    background-color: #c0c0c0;
+    border: 1px solid;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 5px;
+    border-top-color: #fff;
+    border-left-color: #fff;
+}
+
+.win98-alert-controls button.win98-alert-close:hover {
+  background-color: #a7a7a7;
+  color: white;
+}
+
+.win98-alert-body {
+  padding: 10px;
+  color: black;
+  text-align: left;
+}
+
+.win98-alert-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+}
+
+.win98-alert-ok {
+  background-color: #c0c0c0;
+  border: 1px solid;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 5px;
+  border-top-color: #fff;
+  border-left-color: #fff;
+}
+
+.win98-alert-ok:hover {
+  background-color: #a7a7a7;
+}
