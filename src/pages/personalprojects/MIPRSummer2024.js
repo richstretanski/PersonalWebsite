@@ -1,9 +1,11 @@
+import MIPRAbout from './MIPRAbout'; 
 const MIPRWinter2024 = ({ handleImageClick }) => {
   return (
     <div id="ppcontent">
       <span className="papers">MIPR Summer 2024</span>
       <br />
       <br />
+      <MIPRAbout /> {/* Ensure this component is correctly imported */}
       <ul className="personal">
         <li>
           <a

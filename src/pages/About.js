@@ -23,11 +23,13 @@ const About = () => {
         </div>
         <div className="about2">
           <ul>
-            <li><div className="b">Recent University of Michigan-Dearborn Graduate</div></li>
+            <li><div className="b">University of Michigan-Dearborn</div></li>
             <br />
             <li><div className="b">Masters of Science:</div> Information Systems & Technology</li>
             <br />
-            <li><div className="b">BBA Dual Major:</div> Digital Marketing, Information Technology Management</li>
+            <li><div className="b">BBA:</div> Digital Marketing, Information Technology Management</li>
+            <br />
+            <li><div className="b">ISC2</div> Cybersecurity Certification</li>
           </ul>
         </div>
         <div className="about4">
@@ -49,15 +51,16 @@ const About = () => {
         <div className="about3">
           <div className="b"><b>Welcome to My Website!</b></div>
           <p>
-            I'm a recent graduate from the University of Michigan-Dearborn with a background in Information Technology Management and Digital Marketing from the College of Business. I also earned my master’s degree in Information Systems & Technology (Information Security concentration) from the College of Engineering & Computer Science.
+            I'm a recent graduate from the University of Michigan-Dearborn with a BBA in Information Technology Management and Digital Marketing from the College of Business. I also earned my master’s degree in Information Systems & Technology (Information Security concentration) from the College of Engineering & Computer Science.
           </p>
           <p>
-            Beyond academics, I gained hands-on experience as an Applications Engineer at a small company, where I wore many hats—from setting up VPN infrastructure for overseas developers to creating custom demos for potential clients and managing Google AdWords campaigns.
+            Beyond academics, I gained hands-on experience as an Applications Engineer at a small company, where I wore many hats—from setting up VPN infrastructure for overseas developers to creating custom knowledge system demos and managing Google AdWords campaigns.
           </p>
           <p>
-            Feel free to explore my site to learn more about my work, projects, and interests!
+            In my free time, I am a competitive Super Smash Bros. Melee player. I am ranked in the top 10 in Michigan and have competed in tournaments across the country. You will see that some of my projects are centered around melee and are for the benefit of the Michigan melee community.
           </p>
           <p>
+            Feel free to explore my site to learn more about my projects, and interests!
             You can reach out to me at <a className="link" href="mailto:rstretan@umich.edu">rstretan@umich.edu</a>
           </p>
         </div>

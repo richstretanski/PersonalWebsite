@@ -1,9 +1,11 @@
+import MIPRAbout from './MIPRAbout'; 
 const MIPRSummer2022 = () => {
   return (
     <div id="ppcontent">
             <span id="10" className="papers">MIPR Summer 2022</span>
             <br />
             <br />
+            <MIPRAbout /> {/* Ensure this component is correctly imported */}
             <ul className="personal">
               <li>
                 <a href="https://x.com/MichiganMelee/status/1575962460565417984?s=20" target="_blank" rel="noopener noreferrer">

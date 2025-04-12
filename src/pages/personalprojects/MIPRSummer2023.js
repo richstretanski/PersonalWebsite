@@ -1,16 +1,12 @@
 import miprSummer2023 from '../../images/melee/MIPR/2023SummerFull.png'; // Import image
-
+import MIPRAbout from './MIPRAbout'; 
 const MIPRSummer2023 = ({ handleImageClick }) => {
   return (
     <div id="ppcontent">
       <span id="13" className="papers">MIPR Summer 2023</span>
       <br />
       <br />
-      <p>
-        I am part of a small team that organizes a larger panel of about 15 people (which I am also in), tasked to
-        evaluate the tournament results of all the players in Michigan to come up with an official state-wide
-        ranking...
-      </p>
+      <MIPRAbout /> {/* Ensure this component is correctly imported */}
       <ul className="personal">
         <li>
           <a href="https://x.com/MichiganMelee/status/1715161077229760950?s=20" target="_blank" rel="noopener noreferrer">

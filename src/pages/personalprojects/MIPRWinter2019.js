@@ -1,11 +1,12 @@
 import miprWinter2019 from '../../images/melee/MIPR/2019winter.jpg'; // Import image
-
+import MIPRAbout from './MIPRAbout'; 
 const MIPRWinter2019 = ({ handleImageClick }) => {
   return (
     <div id="ppcontent">
       <span id="5" className="papers">MIPR Winter 2019</span>
       <br />
       <br />
+      <MIPRAbout /> {/* Ensure this component is correctly imported */}
       <ul className="personal">
         <li>
           <a

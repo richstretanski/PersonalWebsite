@@ -63,7 +63,7 @@ const ThisWebsite = () => {
       <br />
       <p><b>Future Work:</b></p>
       <ul className="courses">
-        <li>Improve the mobile experience by optimizing the layout for smaller screens.</li>
+        <li>Make it one single page with all react components for scalability. While not practical for this website, it would be good practice.</li>
         <li> Titlebar Minimize and Maximize functionality.</li>
         <li>Draggable windows</li>
         <li>Add more animations and transitions to make the site feel even more interactive.</li>

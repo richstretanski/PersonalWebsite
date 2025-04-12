@@ -1,9 +1,14 @@
+//components
 import React, { useState } from 'react';
 import Head from '../components/Head'; // Import Head
 import Navbar from '../components/Navbar'; // Import Navbar
 import Footer from '../components/Footer'; // Import Footer
 import Titlebar from '../components/Titlebar'; // Import Titlebar
 import Sidebar from '../components/Sidebar'; // Import updated Sidebar
+import Banner from '../components/Banner'; // Import Banner component
+//scripts
+import { handleImageClick } from '../scripts/script';
+//pages
 import MIPRHallOfRecords from './personalprojects/MIPRHallOfRecords';
 import MIPRSummer2023 from './personalprojects/MIPRSummer2023';
 import MeleeTournamentStats from './personalprojects/MeleeTournamentStats';
@@ -18,12 +23,10 @@ import MIPRFall2018 from './personalprojects/MIPRFall2018';
 import MIPRSummer2018 from './personalprojects/MIPRSummer2018';
 import MIPRSpring2018 from './personalprojects/MIPRSpring2018';
 import MIPRDLEProject from './personalprojects/MIPRDLEProject'; // Import MIPRDLEProject
-import { handleImageClick } from '../scripts/script';
 import MIPRWinter2024 from './personalprojects/MIPRWinter2024';
 import MIPRSummer2024 from './personalprojects/MIPRSummer2024';
 import PersonalAbout from './personalprojects/PersonalAbout'; // Import PersonalAbout
 import ThisWebsite from './personalprojects/ThisWebsite';
-import Banner from '../components/Banner'; // Import Banner component
 
 const personalProjectItems = [
   { label: 'This Website', contentKey: 'ThisWebsite' },
