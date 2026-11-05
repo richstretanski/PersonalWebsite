@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# richstretanski.com
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+My personal website, built with React and styled as a Windows 98-style desktop. It collects my background, resume, and projects, including write-ups of my home server and network.
 
-## Available Scripts
+**Live site:** [richstretanski.com](https://www.richstretanski.com)
 
-In the project directory, you can run:
+## Sections
 
-### `npm start`
+| Section | Contents |
+|---|---|
+| About | Landing page with my background, education, and contact links |
+| Homelab | Overview and architecture diagram, NAS, Pi-hole, and roadmap |
+| Academic Projects | InfoSec, IT, and digital marketing coursework |
+| Personal Projects | This website, MIPRDLE, and Michigan Melee community projects |
+| Resume | Resume embedded from Google Drive |
+| TourneyStats and MIPRDLE | Embedded web apps |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React 19 with Create React App
+- React Router 7 for client-side routing
+- React Helmet Async for the document head
+- Custom CSS for the retro look and layout
+- GitHub Pages for hosting, with a custom domain
 
-### `npm test`
+## How It Works
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Windows:** each route renders a window on the desktop. Closing one navigates to `/desktop`, which shows the icons with no window open. On phones, windows open fullscreen.
+- **Direct links:** GitHub Pages serves static files, so a URL like `/homelab` has no matching file. The `postbuild` script copies `index.html` to `404.html`, which lets React Router load the right page.
+- **Resume:** the PDF is hosted on Google Drive and embedded, so it is not stored in this repository.
 
-### `npm run build`
+## Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+public/            HTML template, custom domain, and static files
+src/
+  App.js           Routes
+  components/      Navbar, Titlebar, Sidebar, Banner, Footer, Head
+  pages/           One component per window
+    homelab/       Homelab pages and architecture diagram
+    academicprojects/
+    personalprojects/
+  scripts/         Taskbar clock, image popout, and titlebar actions
+  styles/          Global, titlebar, and Homelab styles
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Deploying
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm run deploy
+```
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This builds the site and publishes the `build` folder to the `gh-pages` branch.
