@@ -43,7 +43,7 @@ const About = () => {
             </li>
             <br />
             <li className="about4navli">
-              <Link to="">Resume.pdf</Link>
+              <Link to="/resume">Resume</Link>
             </li>
             <br />
           </ul>

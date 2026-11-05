@@ -12,7 +12,7 @@ const ThisWebsite = () => {
       <ul className="courses">
         <li><b>Dynamic Content:</b> The site updates dynamically based on what you click. For example, if you pick a project from the sidebar, it loads that specific content without refreshing the whole page.</li>
         <li><b>Navigation:</b> I went for a retro Windows 98 vibe with desktop-style navigation. There are icons for different sections like Academic Projects, Personal Projects, and Resume page. The sidebars make it easy to dive into specific topics or projects.</li>
-        <li><b>Embedded Tools:</b> I’ve integrated stuff like Google Looker Studio for data visualizations, embedded web apps, and even a Google Form for requesting my resume. It’s all right there on the site.</li>
+        <li><b>Embedded Tools:</b> I’ve integrated stuff like Google Looker Studio for data visualizations, embedded web apps, and even a Google Drive preview of my resume. It’s all right there on the site.</li>
         <li><b>Popout Image Viewer:</b> If you click on an image, it pops out in a larger view. It’s a small touch, but it makes the site feel more interactive.</li>
         <li><b>Responsive Design:</b> The site works on different screen sizes, so whether you're on a phone (sort of) or a desktop, it still looks okay.</li>
       </ul>
@@ -23,7 +23,7 @@ const ThisWebsite = () => {
           <ul>
             <li><b>Academic Projects:</b> These are summaries of the work I did during my studies, including team projects and individual research.</li>
             <li><b>Personal Projects:</b> This section is for the hobby stuff, like MIPRDLE (a daily guessing game) and Melee Tournament Stats.</li>
-            <li><b>Resume:</b> There’s a Google Form where people can request my resume if they’re interested.</li>
+            <li><b>Resume:</b> My resume is embedded right on the page, so you can read it without leaving the site.</li>
           </ul>
         </li>
         <li><b>Retro Design:</b> The whole site has this Windows 98-inspired look, thanks to the <b>98.css</b> library. It’s nostalgic and fun to work with.</li>
@@ -49,7 +49,7 @@ const ThisWebsite = () => {
         <li><b>Embedded Tools:</b>
           <ul>
             <li>Google Looker Studio for data visualizations.</li>
-            <li>Google Forms for the resume request feature.</li>
+            <li>Google Drive for the embedded resume.</li>
             <li>GitHub Pages for hosting the site.</li>
           </ul>
         </li>

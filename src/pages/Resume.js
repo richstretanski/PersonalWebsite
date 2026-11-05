@@ -12,11 +12,13 @@ const Resume = () => {
       <Navbar /> {/* Add Navbar */}
       <div className="academic">
         <Titlebar title="Resume" /> {/* Add Titlebar */}
-        <Banner title="Resume Request Form" backgroundImage={require('../images/M.png')} /> {/* Pass imported image */}
-        <embed
-          src="https://docs.google.com/forms/d/e/1FAIpQLSebJC9_rm08S60IZ8Ac2mOpleS5OJFDhsERwyrnRuyRZD152Q/viewform"
-          style={{ width: '100%', height: '100%' }}
-        ></embed>
+        <Banner title="Resume" backgroundImage={require('../images/M.png')} /> {/* Pass imported image */}
+        {/* Hosted on Google Drive so the PDF stays out of this public repo */}
+        <iframe
+          src="https://drive.google.com/file/d/1zSgonRFf6TJB7fTDb91_gu9RzkLzJMKY/preview"
+          title="Rich Stretanski's resume"
+          style={{ width: '100%', flex: 1, border: 'none', backgroundColor: 'white' }}
+        ></iframe>
       </div>
       <Footer />
     </div>
