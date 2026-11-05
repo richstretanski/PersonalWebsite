@@ -1,0 +1,99 @@
+/* Styles shared by the Homelab pages. The "planned" variants use a dashed
+   border and a text label, so status never relies on color alone. */
+
+.homelab-heading {
+  margin: 1.2em 0 0.4em;
+  font-size: 13pt;
+  color: white;
+}
+
+#ppcontent code {
+  font-family: monospace;
+  color: #ffd27f;
+}
+
+/*---------------Specs Table-------------------*/
+.homelab-specs {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #c0c0c0;
+}
+
+.homelab-specs th,
+.homelab-specs td {
+  padding: 5px 8px;
+  border-bottom: 1px solid #6e6e6e;
+  text-align: left;
+  vertical-align: top;
+}
+
+.homelab-specs th {
+  width: 25%;
+  background-color: rgba(255, 255, 255, 0.08);
+  white-space: nowrap;
+}
+
+/*---------------Architecture Diagram-------------------*/
+.homelab-diagram {
+  margin: 0;
+  max-width: 100%;
+}
+
+.homelab-layer {
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 2px solid #c0c0c0;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.homelab-layer-name {
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.homelab-parts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.homelab-part {
+  padding: 4px 8px;
+  border: 2px solid #ffffff;
+  color: white;
+}
+
+.homelab-part.planned {
+  border: 2px dashed #9a9a9a;
+  color: #c8c8c8;
+}
+
+.homelab-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+/*---------------Skill Tags-------------------*/
+.homelab-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 1em;
+  padding: 0;
+  list-style: none;
+}
+
+.homelab-tags li {
+  padding: 3px 8px;
+  border: 2px solid #c0c0c0;
+}
+
+.homelab-tags.planned li {
+  border: 2px dashed #9a9a9a;
+  color: #c8c8c8;
+}

@@ -7,6 +7,7 @@ import Navbar from './components/Navbar'; // Import Navbar
 import About from './pages/About'; // Import About component
 import AcademicProjects from './pages/AcademicProjects';
 import PersonalProjects from './pages/PersonalProjects';
+import Homelab from './pages/Homelab';
 import Resume from './pages/Resume';
 import TourneyStats from './pages/TourneyStats'; // Import TourneyStats
 import MIPRDLE from './pages/MIPRDLE'; // Import MIPRDLE
@@ -31,6 +32,7 @@ const AppContent = () => {
         <Route path="/desktop" element={null} />
         <Route path="/academic-projects" element={<AcademicProjects />} />
         <Route path="/personal-projects" element={<PersonalProjects />} />
+        <Route path="/homelab" element={<Homelab />} />
         <Route path="/resume" element={<Resume />} />
 
         {/* Add routes for personal project pages */}

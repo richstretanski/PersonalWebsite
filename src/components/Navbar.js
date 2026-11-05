@@ -6,6 +6,7 @@ import notepadIcon from '../images/icons/notepad_file-2.png';
 import recycleBinIcon from '../images/icons/recycle_bin_full-4.png';
 import fd from '../images/icons/FD.png';
 import dl from '../images/icons/DL.png';
+import networkIcon from '../images/icons/network-48x48.png';
 
 const Navbar = () => {
   const handleClick = (e) => {
@@ -53,6 +54,12 @@ const Navbar = () => {
             <Link className="nav" to="/miprdle">
               <img className="navFD" src={dl} alt="MIPRDLE" />
               <br />MIPRDLE
+            </Link>
+          </li>
+          <li className="nav">
+            <Link className="nav" to="/homelab">
+              <img className="navFD" src={networkIcon} alt="Homelab" />
+              <br />HOMELAB
             </Link>
           </li>
         </ul>
