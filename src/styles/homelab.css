@@ -33,6 +33,24 @@
   white-space: nowrap;
 }
 
+/*---------------Screenshots-------------------*/
+.homelab-figure {
+  margin: 1em 0;
+}
+
+.homelab-figure img {
+  display: block;
+  width: 100%;
+  border: 2px solid #c0c0c0;
+  cursor: pointer;
+}
+
+.homelab-figure figcaption {
+  margin-top: 4px;
+  font-size: 11pt;
+  color: #c8c8c8;
+}
+
 /*---------------Architecture Diagram-------------------*/
 .homelab-diagram {
   margin: 0;

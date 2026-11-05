@@ -57,7 +57,7 @@ const About = () => {
             As an Applications Engineer (Contract) at Emergent Systems, I built the networking infrastructure for a new office, including firewall deployment and an SSL VPN for overseas developers. I also built and maintained three company websites, created demos of a proprietary knowledge system, and provided software and hardware support. I currently work as a contract AI Writing Evaluator at Outlier AI.
           </p>
           <p>
-            At home, I built a NAS server to digitize and preserve family media from VHS and 8mm, and I run a Raspberry Pi with Pi-hole for network-wide DNS filtering. See my <Link className="link" to="/homelab">Homelab</Link> for the full write-ups.
+            At home, I built a NAS server to digitize and preserve family media from VHS and 8mm, and I run a Raspberry Pi with Pi-hole for DNS filtering on my home network. See my <Link className="link" to="/homelab">Homelab</Link> for the full write-ups.
           </p>
           <p>
             In my free time, I am a competitive Super Smash Bros. Melee player. I am ranked in the top 10 in Michigan and have competed in tournaments across the country. Some of my personal projects are volunteer work for the Michigan Melee community.

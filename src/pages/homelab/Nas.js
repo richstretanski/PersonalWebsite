@@ -1,3 +1,5 @@
+import omvDashboard from '../../images/projectimages/omv.PNG';
+
 const specs = [
   ['OS', 'OpenMediaVault 8 (Debian 13), headless, managed by web UI and SSH'],
   ['Motherboard', 'ASRock H97 Anniversary'],
@@ -11,7 +13,7 @@ const specs = [
   ['Services', 'SMB file sharing for Windows clients (recycle bin enabled), SMART monitoring'],
 ];
 
-const Nas = () => {
+const Nas = ({ handleImageClick }) => {
   return (
     <div id="ppcontent">
       <span className="papers">OpenMediaVault NAS</span>
@@ -21,7 +23,7 @@ const Nas = () => {
         This server is the central store for many years of family photos, videos, and documents, consolidated from old PCs, laptops, and shared drives.
       </p>
       <p>
-        It also holds our family video archive. I digitized 182 8mm films, 128 VHS tapes, and 8 VHS-C tapes over the course of a summer, so the family can watch them whenever they like.
+        It also holds our family video archive. I digitized 182 8mm tapes, 128 VHS tapes, and 8 VHS-C tapes over the course of a summer, so the family can watch them whenever they like.
       </p>
       <p>
         I built it after retiring two WD My Book Live units. Those devices are end-of-life and have an unpatched remote factory-reset vulnerability (<a className="link" href="https://nvd.nist.gov/vuln/detail/CVE-2021-35941" target="_blank" rel="noopener noreferrer">CVE-2021-35941</a>) that let attackers wipe drives over the internet. Rather than trust another closed appliance, I built my own NAS on open software I can update and inspect. The old My Book Live drives never go back on a network; I read them only offline, over a direct connection.
@@ -41,6 +43,16 @@ const Nas = () => {
           ))}
         </tbody>
       </table>
+      <figure className="homelab-figure">
+        <img
+          src={omvDashboard}
+          alt="OpenMediaVault dashboard showing storage use, disk temperatures, SMART status, and running services"
+          onClick={() => handleImageClick(omvDashboard)}
+        />
+        <figcaption>
+          OpenMediaVault dashboard. The yellow SMART status marks the drive with one reallocated sector, which I monitor against its baseline.
+        </figcaption>
+      </figure>
 
       <h3 className="homelab-heading">PSU Failure and Resolution</h3>
       <p>

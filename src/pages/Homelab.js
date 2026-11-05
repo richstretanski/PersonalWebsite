@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import Titlebar from '../components/Titlebar';
 import Sidebar from '../components/Sidebar';
 import Banner from '../components/Banner';
+import { handleImageClick } from '../scripts/script';
 import HomelabOverview from './homelab/HomelabOverview';
 import Nas from './homelab/Nas';
 import PiHole from './homelab/PiHole';
@@ -22,6 +23,7 @@ const homelabPages = [
 
 const Homelab = () => {
   const [selectedContent, setSelectedContent] = useState('overview');
+  const [popoutImage, setPopoutImage] = useState(null);
   const { Page } = homelabPages.find((page) => page.contentKey === selectedContent);
 
   return (
@@ -33,9 +35,14 @@ const Homelab = () => {
         <Banner title="Homelab" />
         <div className="content">
           <Sidebar items={homelabPages} setSelectedContent={setSelectedContent} />
-          <Page />
+          <Page handleImageClick={(imageSrc) => handleImageClick(imageSrc, setPopoutImage, popoutImage)} />
         </div>
       </div>
+      {popoutImage && (
+        <div className="popout-overlay" onClick={() => setPopoutImage(null)}>
+          <img className="popout-image" src={popoutImage} alt="Enlarged view" />
+        </div>
+      )}
       <Footer />
     </div>
   );

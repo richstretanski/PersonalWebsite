@@ -1,10 +1,20 @@
-const PiHole = () => {
+import piholeDashboard from '../../images/projectimages/pihole.PNG';
+
+const PiHole = ({ handleImageClick }) => {
   return (
     <div id="ppcontent">
       <span className="papers">Pi-hole DNS Filtering</span>
       <p>
-        I run Pi-hole on a Raspberry Pi to filter DNS for the whole home network, so ads and unwanted domains are blocked on every connected device without installing anything on them.
+        I run Pi-hole on a Raspberry Pi as a DNS filter for my home network, blocking ads and unwanted domains on the devices that use it without installing anything on them. Not every device is covered, since some IoT devices only take their DNS settings from DHCP.
       </p>
+      <figure className="homelab-figure">
+        <img
+          src={piholeDashboard}
+          alt="Pi-hole dashboard showing total queries, blocked queries, and domains on block lists"
+          onClick={() => handleImageClick(piholeDashboard)}
+        />
+        <figcaption>Pi-hole dashboard.</figcaption>
+      </figure>
 
       <h3 className="homelab-heading">Fixing IP Stability</h3>
       <p>
