@@ -25,11 +25,11 @@ const About = () => {
           <ul>
             <li><div className="b">University of Michigan-Dearborn</div></li>
             <br />
-            <li><div className="b">Masters of Science:</div> Information Systems & Technology</li>
+            <li><div className="b">Master of Science:</div> Information Systems & Technology (Information Security concentration)</li>
             <br />
             <li><div className="b">BBA:</div> Digital Marketing, Information Technology Management</li>
             <br />
-            <li><div className="b">ISC2</div> Cybersecurity Certification</li>
+            <li><div className="b">ISC2:</div> Certified in Cybersecurity (CC)</li>
           </ul>
         </div>
         <div className="about4">
@@ -51,17 +51,19 @@ const About = () => {
         <div className="about3">
           <div className="b"><b>Welcome to My Website!</b></div>
           <p>
-            I'm a recent graduate from the University of Michigan-Dearborn with a BBA in Information Technology Management and Digital Marketing from the College of Business. I also earned my master’s degree in Information Systems & Technology (Information Security concentration) from the College of Engineering & Computer Science.
+            IT professional seeking an entry-level role. MS in Information Systems & Technology (Information Security concentration), ISC2 Certified in Cybersecurity (CC), with hands-on networking and home lab experience.
           </p>
           <p>
-            Beyond academics, I gained hands-on experience as an Applications Engineer at a small company, where I wore many hats—from setting up VPN infrastructure for overseas developers to creating custom knowledge system demos and managing Google AdWords campaigns.
+            As an Applications Engineer (Contract) at Emergent Systems, I built the networking infrastructure for a new office, including firewall deployment and an SSL VPN for overseas developers. I also built and maintained three company websites, created demos of a proprietary knowledge system, and provided software and hardware support. I currently work as a contract AI Writing Evaluator at Outlier AI.
           </p>
           <p>
-            In my free time, I am a competitive Super Smash Bros. Melee player. I am ranked in the top 10 in Michigan and have competed in tournaments across the country. You will see that some of my projects are centered around melee and are for the benefit of the Michigan melee community.
+            At home, I built a NAS server to digitize and preserve family media from VHS and 8mm, and I run a Raspberry Pi with Pi-hole for network-wide DNS filtering.
           </p>
           <p>
-            Feel free to explore my site to learn more about my projects, and interests!
-            You can reach out to me at <a className="link" href="mailto:rstretan@umich.edu">rstretan@umich.edu</a>
+            In my free time, I am a competitive Super Smash Bros. Melee player. I am ranked in the top 10 in Michigan and have competed in tournaments across the country. Some of my personal projects are volunteer work for the Michigan Melee community.
+          </p>
+          <p>
+            You can read my <Link className="link" to="/resume">resume</Link> or reach me at <a className="link" href="mailto:rstretan@umich.edu">rstretan@umich.edu</a>.
           </p>
         </div>
       </div>

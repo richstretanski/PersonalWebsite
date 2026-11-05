@@ -4,12 +4,8 @@ export const useTitlebarFunctions = () => {
   const navigate = useNavigate();
 
   const handleClose = () => {
-    try {
-      console.log('handleClose called'); // Debug log to ensure the function is triggered
-      navigate('/'); // Navigate back to the root page
-    } catch (error) {
-      console.error('Error navigating to the root page:', error);
-    }
+    // '/' now shows the About window, so closing goes to the empty desktop instead
+    navigate('/desktop');
   };
 
   const handleMinimize = () => {

@@ -15,16 +15,20 @@ import Footer from './components/Footer';
 const AppContent = () => {
   const location = useLocation(); // Get the current location
 
-  const isHomePage = location.pathname === '/';
+  // Page components render their own Navbar and Footer. Only the empty
+  // desktop needs them here; rendering them twice stacks two taskbars.
+  const isEmptyDesktop = location.pathname === '/desktop';
 
   return (
     <div id="desktop">
       <Head /> {/* Add Head */}
-      {/* Render Navbar on the home page */}
-      {isHomePage && <Navbar />}
+      {isEmptyDesktop && <Navbar />}
       <Routes>
-        <Route path="/" element={null} /> {/* Home page is just the Navbar above */}
+        {/* About is the landing page so visitors see who this site is about first */}
+        <Route path="/" element={<About />} />
         <Route path="/about" element={<About />} />
+        {/* Where a window's close button leads: the icons with no window open */}
+        <Route path="/desktop" element={null} />
         <Route path="/academic-projects" element={<AcademicProjects />} />
         <Route path="/personal-projects" element={<PersonalProjects />} />
         <Route path="/resume" element={<Resume />} />
@@ -36,7 +40,7 @@ const AppContent = () => {
         {/* Send unknown URLs home instead of showing an empty desktop */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-      <Footer />
+      {isEmptyDesktop && <Footer />}
     </div>
   );
 };
