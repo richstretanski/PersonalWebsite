@@ -63,7 +63,7 @@ const About = () => {
             In my free time, I am a competitive Super Smash Bros. Melee player. I am ranked in the top 10 in Michigan and have competed in tournaments across the country. Some of my personal projects are volunteer work for the Michigan Melee community.
           </p>
           <p>
-            You can read my <Link className="link" to="/resume">resume</Link> or reach me at <a className="link" href="mailto:rstretan@umich.edu">rstretan@umich.edu</a>.
+            You can read my <Link className="link" to="/resume">resume</Link>, find me on <a className="link" href="https://www.linkedin.com/in/richtextformat/" target="_blank" rel="noopener noreferrer">LinkedIn</a>, or reach me at <a className="link" href="mailto:rstretan@umich.edu">rstretan@umich.edu</a>.
           </p>
         </div>
       </div>

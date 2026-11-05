@@ -21,6 +21,9 @@ const Nas = () => {
         This server is the central store for many years of family photos, videos, and documents, consolidated from old PCs, laptops, and shared drives.
       </p>
       <p>
+        It also holds our family video archive. I digitized 182 8mm films, 128 VHS tapes, and 8 VHS-C tapes over the course of a summer, so the family can watch them whenever they like.
+      </p>
+      <p>
         I built it after retiring two WD My Book Live units. Those devices are end-of-life and have an unpatched remote factory-reset vulnerability (<a className="link" href="https://nvd.nist.gov/vuln/detail/CVE-2021-35941" target="_blank" rel="noopener noreferrer">CVE-2021-35941</a>) that let attackers wipe drives over the internet. Rather than trust another closed appliance, I built my own NAS on open software I can update and inspect. The old My Book Live drives never go back on a network; I read them only offline, over a direct connection.
       </p>
       <p>
