@@ -23,6 +23,9 @@ const MIPRDLEProject = () => {
         </ul>
         <br />
         <b>Technologies Used:</b> HTML, CSS, JavaScript, GitHub Pages
+        <br />
+        <br />
+        A React update with new features is in development.
       
       <hr />
     </div>
