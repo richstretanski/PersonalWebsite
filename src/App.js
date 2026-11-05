@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async'; // Import HelmetProvider
 import Head from './components/Head'; // Import Head
 import Navbar from './components/Navbar'; // Import Navbar
@@ -23,6 +23,7 @@ const AppContent = () => {
       {/* Render Navbar on the home page */}
       {isHomePage && <Navbar />}
       <Routes>
+        <Route path="/" element={null} /> {/* Home page is just the Navbar above */}
         <Route path="/about" element={<About />} />
         <Route path="/academic-projects" element={<AcademicProjects />} />
         <Route path="/personal-projects" element={<PersonalProjects />} />
@@ -31,6 +32,9 @@ const AppContent = () => {
         {/* Add routes for personal project pages */}
         <Route path="/tourneystats" element={<TourneyStats />} /> {/* Add TourneyStats route */}
         <Route path="/miprdle" element={<MIPRDLE />} />
+
+        {/* Send unknown URLs home instead of showing an empty desktop */}
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <Footer />
     </div>
