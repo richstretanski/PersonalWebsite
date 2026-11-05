@@ -32,7 +32,7 @@ const personalProjectItems = [
   { label: 'This Website', contentKey: 'ThisWebsite' },
   { label: 'MIPRDLE', contentKey: 'MIPRDLEProject' },
   {
-    label: 'Michigan Melee Power Rankings',
+    label: 'MI Melee Power Rankings',
     children: [
       { label: 'Summer 2024', contentKey: 'MIPRSummer2024' },
       { label: 'Winter 2024', contentKey: 'MIPRWinter2024' },
