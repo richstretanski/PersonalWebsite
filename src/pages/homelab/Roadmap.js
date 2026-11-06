@@ -8,7 +8,7 @@ const Roadmap = () => {
 
       <h3 className="homelab-heading">Backup</h3>
       <p>
-        A 3-2-1 strategy: a monthly mirror to an offline drive in a USB dock, plus an offsite copy, because RAID is not a backup.
+        An offsite copy, the missing piece of a 3-2-1 strategy now that the offline backup drive is running.
       </p>
 
       <h3 className="homelab-heading">Containers</h3>
@@ -26,7 +26,7 @@ const Roadmap = () => {
       <p>An OPNsense firewall on an N100 mini PC, and Tailscale for remote access.</p>
 
       <h3 className="homelab-heading">Operations</h3>
-      <p>Scheduled SMART tests with email alerts, and a UPS with graceful shutdown.</p>
+      <p>A UPS with graceful shutdown.</p>
       <hr />
     </div>
   );

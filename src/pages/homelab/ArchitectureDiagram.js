@@ -15,7 +15,7 @@ const layers = [
       { label: '256 GB OS SSD' },
       { label: 'RAID-6 array (4x 1 TB)' },
       { label: 'Camera disk', planned: true },
-      { label: 'Offline backup disk', planned: true },
+      { label: 'Offline backup disk (3 TB)' },
     ],
   },
   {
@@ -24,6 +24,7 @@ const layers = [
       { label: 'SMB shares' },
       { label: 'Disks and RAID' },
       { label: 'SMART monitoring' },
+      { label: 'Email alerts' },
       { label: 'Docker', planned: true },
     ],
   },
